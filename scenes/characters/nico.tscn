@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://jf5pcso0paqn"]
+
+[ext_resource type="PackedScene" uid="uid://dgaqcmrp0lxe5" path="res://assets/models/characters/nico.glb" id="1_dta10"]
+
+[node name="nico" unique_id=482777738 instance=ExtResource("1_dta10")]
+
+[node name="Skeleton3D" parent="Nico_Rig" parent_id_path=PackedInt32Array(2122682600) index="0" unique_id=1985310234]
+bones/0/rotation = Quaternion(-2.980233e-08, 0, 0, 1)
+bones/5/rotation = Quaternion(0.9224095, -0.26752606, -0.26752618, -0.077590495)
+bones/6/rotation = Quaternion(-0.08964017, 0.19737437, -0.17685682, 0.9600676)
+bones/8/rotation = Quaternion(0.9224095, 0.26752606, 0.26752618, -0.077590495)
+bones/9/rotation = Quaternion(-0.08964017, -0.19737437, 0.17685682, 0.9600676)
+bones/10/rotation = Quaternion(-0.07968685, 0.011649685, -0.024801001, 0.99644333)
+bones/11/rotation = Quaternion(1, -9.882986e-23, -4.3711385e-08, 3.5527137e-15)
+bones/12/rotation = Quaternion(-0.036690414, 4.368195e-08, 1.6037885e-09, 0.9993267)
+bones/14/rotation = Quaternion(1, -9.882986e-23, -4.3711385e-08, 3.5527137e-15)
+bones/15/rotation = Quaternion(-0.036690414, 4.368195e-08, 1.6037885e-09, 0.9993267)
+
+[node name="head" parent="Nico_Rig/Skeleton3D" index="1" unique_id=205813153]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 5.9604666e-08, 0, -5.960466e-08, 0.99999994, 0, 3.62, -2.0504001e-07)
+
+[node name="hand_L" parent="Nico_Rig/Skeleton3D" index="2" unique_id=402806820]
+transform = Transform3D(0.95777756, -0.18309936, -0.22166914, -0.22166932, -0.9612721, -0.1637644, -0.1830996, 0.20598692, -0.9612718, -1.2199998, 1.9399999, 0.029999986)
+
+[node name="forearm_L" parent="Nico_Rig/Skeleton3D" index="3" unique_id=1319017382]
+transform = Transform3D(0.97107184, -0.1665063, -0.17116006, -0.17116049, -0.98516154, -0.012698263, -0.16650635, 0.041626617, -0.98516124, -1.0999998, 2.65, -9.029705e-08)
+
+[node name="upper_arm_L" parent="Nico_Rig/Skeleton3D" index="4" unique_id=177218650]
+transform = Transform3D(0.7137195, -0.53505224, -0.4520224, -0.45202237, -0.8448191, 0.28628078, -0.5350525, 8.0157484e-08, -0.8448189, -0.72, 3.2499998, -1.8298628e-07)
+
+[node name="hand_R" parent="Nico_Rig/Skeleton3D" index="5" unique_id=117552093]
+transform = Transform3D(0.9577775, 0.18309939, 0.22166914, 0.22166933, -0.9612722, -0.16376437, 0.1830996, 0.20598689, -0.9612718, 1.2199998, 1.9399999, 0.029999986)
+
+[node name="forearm_R" parent="Nico_Rig/Skeleton3D" index="6" unique_id=1695098087]
+transform = Transform3D(0.97107184, 0.1665063, 0.17116006, 0.17116049, -0.98516154, -0.012698263, 0.16650635, 0.041626617, -0.98516124, 1.0999998, 2.65, -9.029705e-08)
+
+[node name="upper_arm_R" parent="Nico_Rig/Skeleton3D" index="7" unique_id=290241476]
+transform = Transform3D(0.7137195, 0.53505224, 0.4520224, 0.45202237, -0.8448191, 0.28628078, 0.5350525, 8.0157484e-08, -0.8448189, 0.72, 3.2499998, -1.8298628e-07)
+
+[node name="chest" parent="Nico_Rig/Skeleton3D" index="8" unique_id=512266876]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 5.960466e-08, 0, -5.960465e-08, 0.99999994, 0, 2.6499996, -1.4722349e-07)
+
+[node name="foot_L" parent="Nico_Rig/Skeleton3D" index="9" unique_id=217801002]
+transform = Transform3D(1, 6.986269e-15, -1.5709848e-15, 4.440892e-16, -0.26879892, -0.96319586, -7.1054274e-15, 0.96319604, -0.26879898, -0.42000002, 0.5200003, 0.04999998)
+
+[node name="thigh_L" parent="Nico_Rig/Skeleton3D" index="10" unique_id=122259247]
+transform = Transform3D(1, 1.1292833e-22, -8.742277e-08, -5.210804e-15, -0.99999976, -5.960466e-08, -8.742276e-08, 5.9604645e-08, -0.99999994, -0.42, 2.0499997, -1.1146069e-07)
+
+[node name="foot_R" parent="Nico_Rig/Skeleton3D" index="11" unique_id=1850658213]
+transform = Transform3D(1, 6.986269e-15, -1.5709848e-15, 4.440892e-16, -0.26879892, -0.96319586, -7.1054274e-15, 0.96319604, -0.26879898, 0.42000002, 0.5200003, 0.04999998)
+
+[node name="thigh_R" parent="Nico_Rig/Skeleton3D" index="12" unique_id=1114543196]
+transform = Transform3D(1, 1.1292833e-22, -8.742277e-08, -5.210804e-15, -0.99999976, -5.960466e-08, -8.742276e-08, 5.9604645e-08, -0.99999994, 0.42, 2.0499997, -1.1146069e-07)
