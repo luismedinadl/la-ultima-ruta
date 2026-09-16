@@ -7,7 +7,15 @@ extends CharacterBody3D
 @export var rotation_speed: float = 18.0
 @export var gravity: float = 24.0
 
+@export_category("Ataque")
+@export var attack_duration: float = 0.55
+@export var attack_cooldown: float = 0.65
+
 @onready var animation_player: AnimationPlayer = $Visual/AnimationPlayer
+
+var is_attacking := false
+var attack_timer := 0.0
+var attack_cooldown_timer := 0.0
 
 
 func _ready() -> void:
@@ -19,6 +27,23 @@ func _physics_process(delta: float) -> void:
 		velocity.y -= gravity * delta
 	else:
 		velocity.y = -0.1
+
+	if attack_timer > 0.0:
+		attack_timer -= delta
+	else:
+		is_attacking = false
+
+	if attack_cooldown_timer > 0.0:
+		attack_cooldown_timer -= delta
+
+	if Input.is_action_just_pressed("attack"):
+		_start_attack()
+
+	if is_attacking:
+		velocity.x = move_toward(velocity.x, 0.0, deceleration * delta)
+		velocity.z = move_toward(velocity.z, 0.0, deceleration * delta)
+		move_and_slide()
+		return
 
 	var input_direction := Input.get_vector(
 		"move_left",
@@ -55,6 +80,17 @@ func _physics_process(delta: float) -> void:
 		_play_animation("Nico_Idle", 1.0)
 
 	move_and_slide()
+
+
+func _start_attack() -> void:
+	if is_attacking or attack_cooldown_timer > 0.0:
+		return
+
+	is_attacking = true
+	attack_timer = attack_duration
+	attack_cooldown_timer = attack_cooldown
+	animation_player.speed_scale = 1.0
+	animation_player.play("Nico_Knife_Attack")
 
 
 func _get_camera_relative_direction(input_direction: Vector2) -> Vector3:
