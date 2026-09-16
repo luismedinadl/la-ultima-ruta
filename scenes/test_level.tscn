@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://biqra2qk4ssjo"]
 
 [ext_resource type="PackedScene" uid="uid://cg5bbw37ru2in" path="res://scenes/characters/nico_player.tscn" id="1_2venv"]
+[ext_resource type="Script" uid="uid://ce1cl1qbvxcpu" path="res://scenes/test_level.gd" id="1_paw1w"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
 size = Vector3(40, 0.5, 40)
@@ -9,6 +10,7 @@ size = Vector3(40, 0.5, 40)
 size = Vector2(40, 40)
 
 [node name="TestLevel" type="Node3D" unique_id=1578690313]
+script = ExtResource("1_paw1w")
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=1700177946]
 
