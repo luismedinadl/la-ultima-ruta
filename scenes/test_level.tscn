@@ -33,3 +33,14 @@ current = true
 
 [node name="EnemyDummy" parent="." unique_id=987585105 instance=ExtResource("3_j6w7d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=536029507]
+
+[node name="HealthBar" type="ProgressBar" parent="HUD" unique_id=1611238189]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 290.0
+offset_bottom = 58.0
+max_value = 5.0
+value = 5.0
+show_percentage = false

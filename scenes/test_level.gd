@@ -5,11 +5,15 @@ extends Node3D
 
 @onready var player: CharacterBody3D = $NicoPlayer
 @onready var camera: Camera3D = $Camera3D
+@onready var health_bar: ProgressBar = $HUD/HealthBar
 
 
 func _ready() -> void:
 	camera.global_position = player.global_position + camera_offset
 	camera.look_at(player.global_position + Vector3(0.0, 2.0, 0.0))
+
+	health_bar.max_value = player.max_health
+	health_bar.value = player.health
 
 
 func _process(delta: float) -> void:
@@ -21,3 +25,4 @@ func _process(delta: float) -> void:
 	)
 
 	camera.look_at(player.global_position + Vector3(0.0, 2.0, 0.0))
+	health_bar.value = player.health
