@@ -6,6 +6,7 @@ extends Node3D
 @onready var player: CharacterBody3D = $NicoPlayer
 @onready var camera: Camera3D = $Camera3D
 @onready var health_bar: ProgressBar = $HUD/HealthBar
+@onready var game_over_label: Label = $HUD/GameOverLabel
 
 
 func _ready() -> void:
@@ -14,6 +15,7 @@ func _ready() -> void:
 
 	health_bar.max_value = player.max_health
 	health_bar.value = player.health
+	game_over_label.hide()
 
 
 func _process(delta: float) -> void:
@@ -26,3 +28,11 @@ func _process(delta: float) -> void:
 
 	camera.look_at(player.global_position + Vector3(0.0, 2.0, 0.0))
 	health_bar.value = player.health
+
+	if player.is_dead:
+		game_over_label.show()
+
+		if Input.is_key_pressed(KEY_R):
+			get_tree().reload_current_scene()
+	else:
+		game_over_label.hide()

@@ -44,3 +44,14 @@ offset_bottom = 58.0
 max_value = 5.0
 value = 5.0
 show_percentage = false
+
+[node name="GameOverLabel" type="Label" parent="HUD" unique_id=1579114051]
+visible = false
+offset_left = 420.0
+offset_top = 270.0
+offset_right = 780.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 32
+text = "GAME OVER
+Presiona R para reiniciar"
+horizontal_alignment = 1
