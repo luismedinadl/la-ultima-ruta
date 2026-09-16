@@ -20,6 +20,7 @@ var attack_cooldown_timer := 0.0
 
 
 func _ready() -> void:
+	add_to_group("player")
 	animation_player.play("Nico_Idle")
 
 
