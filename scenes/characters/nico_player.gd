@@ -11,20 +11,29 @@ extends CharacterBody3D
 @export var attack_duration: float = 0.55
 @export var attack_cooldown: float = 0.65
 
+@export_category("Salud")
+@export var max_health: int = 5
+
 @onready var animation_player: AnimationPlayer = $Visual/AnimationPlayer
 @onready var attack_area: Area3D = $AttackArea
 
+var health: int
 var is_attacking := false
+var is_dead := false
 var attack_timer := 0.0
 var attack_cooldown_timer := 0.0
 
 
 func _ready() -> void:
 	add_to_group("player")
+	health = max_health
 	animation_player.play("Nico_Idle")
 
 
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
+
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	else:
@@ -95,6 +104,27 @@ func _start_attack() -> void:
 	animation_player.play("Nico_Knife_Attack")
 	_damage_enemies_in_range()
 
+
+func _damage_enemies_in_range() -> void:
+	for body in attack_area.get_overlapping_bodies():
+		if body != self and body.has_method("take_damage"):
+			body.take_damage(1)
+
+
+func take_damage(amount: int) -> void:
+	if is_dead:
+		return
+
+	health = max(health - amount, 0)
+	print("Nico recibió daño. Vida restante: ", health)
+
+	if health <= 0:
+		is_dead = true
+		velocity = Vector3.ZERO
+		animation_player.speed_scale = 1.0
+		animation_player.play("Nico_Death")
+
+
 func _get_camera_relative_direction(input_direction: Vector2) -> Vector3:
 	var camera := get_viewport().get_camera_3d()
 
@@ -121,8 +151,3 @@ func _play_animation(animation_name: StringName, playback_speed: float) -> void:
 
 	if animation_player.current_animation != animation_name:
 		animation_player.play(animation_name)
-		
-func _damage_enemies_in_range() -> void:
-	for body in attack_area.get_overlapping_bodies():
-		if body != self and body.has_method("take_damage"):
-			body.take_damage(1)
