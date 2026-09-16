@@ -11,6 +11,7 @@ material = SubResource("StandardMaterial3D_tyqlt")
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6pp72"]
 
 [node name="EnemyDummy" type="CharacterBody3D" unique_id=987585105]
+collision_layer = 2
 script = ExtResource("1_yq0tb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=258708070]
