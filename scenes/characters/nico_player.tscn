@@ -7,6 +7,9 @@
 radius = 0.55
 height = 5.2
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
+size = Vector3(1.4, 2, 1.6)
+
 [node name="NicoPlayer" type="CharacterBody3D" unique_id=624824844]
 script = ExtResource("1_sru0y")
 
@@ -15,3 +18,9 @@ script = ExtResource("1_sru0y")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1477521337]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
 shape = SubResource("CapsuleShape3D_6pp72")
+
+[node name="AttackArea" type="Area3D" parent="." unique_id=1959408189]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea" unique_id=1427176730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3, 1.2)
+shape = SubResource("BoxShape3D_6pp72")

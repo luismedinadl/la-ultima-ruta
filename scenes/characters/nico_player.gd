@@ -12,6 +12,7 @@ extends CharacterBody3D
 @export var attack_cooldown: float = 0.65
 
 @onready var animation_player: AnimationPlayer = $Visual/AnimationPlayer
+@onready var attack_area: Area3D = $AttackArea
 
 var is_attacking := false
 var attack_timer := 0.0
@@ -91,7 +92,7 @@ func _start_attack() -> void:
 	attack_cooldown_timer = attack_cooldown
 	animation_player.speed_scale = 1.0
 	animation_player.play("Nico_Knife_Attack")
-
+	_damage_enemies_in_range()
 
 func _get_camera_relative_direction(input_direction: Vector2) -> Vector3:
 	var camera := get_viewport().get_camera_3d()
@@ -119,3 +120,8 @@ func _play_animation(animation_name: StringName, playback_speed: float) -> void:
 
 	if animation_player.current_animation != animation_name:
 		animation_player.play(animation_name)
+		
+func _damage_enemies_in_range() -> void:
+	for body in attack_area.get_overlapping_bodies():
+		if body != self and body.has_method("take_damage"):
+			body.take_damage(1)
