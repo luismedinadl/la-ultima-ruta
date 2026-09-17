@@ -3,25 +3,33 @@ extends Node3D
 @export var enemy_scene: PackedScene = preload(
 	"res://scenes/enemies/enemy_dummy.tscn"
 )
-@export var max_enemies: int = 3
-@export var spawn_interval: float = 2.5
+@export var enemies_per_wave: int = 3
+@export var spawn_interval: float = 1.0
 @export var spawn_radius: float = 8.0
 
 var spawn_timer := 0.0
+var enemies_spawned := 0
+var wave_complete := false
 
 
 func _ready() -> void:
 	randomize()
-	spawn_enemy()
-	spawn_timer = spawn_interval
 
 
 func _process(delta: float) -> void:
-	spawn_timer -= delta
+	if wave_complete:
+		return
 
-	if spawn_timer <= 0.0 and get_child_count() < max_enemies:
-		spawn_enemy()
-		spawn_timer = spawn_interval
+	if enemies_spawned < enemies_per_wave:
+		spawn_timer -= delta
+
+		if spawn_timer <= 0.0:
+			spawn_enemy()
+			enemies_spawned += 1
+			spawn_timer = spawn_interval
+	elif get_child_count() == 0:
+		wave_complete = true
+		print("Oleada completada.")
 
 
 func spawn_enemy() -> void:
