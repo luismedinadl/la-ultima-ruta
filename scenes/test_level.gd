@@ -8,7 +8,13 @@ extends Node3D
 @onready var health_bar: ProgressBar = $HUD/HealthBar
 @onready var game_over_label: Label = $HUD/GameOverLabel
 @onready var wave_label: Label = $HUD/WaveLabel
+@onready var objective_label: Label = $HUD/ObjectiveLabel
 @onready var enemy_spawner = $EnemySpawner
+@onready var delivery_package = $DeliveryPackage
+@onready var delivery_zone = $DeliveryZone
+
+var has_package := false
+var delivery_complete := false
 
 
 func _ready() -> void:
@@ -18,6 +24,11 @@ func _ready() -> void:
 	health_bar.max_value = player.max_health
 	health_bar.value = player.health
 	game_over_label.hide()
+
+	delivery_package.connect("collected", _on_package_collected)
+	delivery_zone.connect("player_entered", _on_delivery_zone_entered)
+
+	_update_objective()
 
 
 func _process(delta: float) -> void:
@@ -43,3 +54,25 @@ func _process(delta: float) -> void:
 			get_tree().reload_current_scene()
 	else:
 		game_over_label.hide()
+
+
+func _on_package_collected() -> void:
+	has_package = true
+	print("Objetivo actualizado: lleva el paquete a la zona verde.")
+	_update_objective()
+
+
+func _on_delivery_zone_entered() -> void:
+	if has_package and not delivery_complete:
+		delivery_complete = true
+		print("Entrega completada.")
+		_update_objective()
+
+
+func _update_objective() -> void:
+	if delivery_complete:
+		objective_label.text = "Objetivo: Entrega completada"
+	elif has_package:
+		objective_label.text = "Objetivo: Lleva el paquete a la zona verde"
+	else:
+		objective_label.text = "Objetivo: Recoge el paquete"

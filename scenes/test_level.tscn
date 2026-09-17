@@ -2,7 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cg5bbw37ru2in" path="res://scenes/characters/nico_player.tscn" id="1_2venv"]
 [ext_resource type="Script" uid="uid://ce1cl1qbvxcpu" path="res://scenes/test_level.gd" id="1_paw1w"]
+[ext_resource type="PackedScene" uid="uid://6xsjb6oguoi2" path="res://scenes/objects/delivery_package.tscn" id="4_tmr53"]
 [ext_resource type="Script" uid="uid://dndyatylcghsy" path="res://scenes/enemy_spawner.gd" id="4_x4b8f"]
+[ext_resource type="PackedScene" uid="uid://b2dmskumko1je" path="res://scenes/objects/delivery_zone.tscn" id="5_tmr53"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
 size = Vector3(40, 0.5, 40)
@@ -61,5 +63,19 @@ offset_bottom = 110.0
 theme_override_font_sizes/font_size = 22
 text = "Oleada: 1 | Enemigos: 0"
 
+[node name="ObjectiveLabel" type="Label" parent="HUD" unique_id=1040130453]
+offset_left = 30.0
+offset_top = 110.0
+offset_right = 480.0
+offset_bottom = 150.0
+theme_override_font_sizes/font_size = 20
+text = "Objetivo: Recoge el paquete"
+
 [node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
 script = ExtResource("4_x4b8f")
+
+[node name="DeliveryPackage" parent="." unique_id=241478749 instance=ExtResource("4_tmr53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.35, -3)
+
+[node name="DeliveryZone" parent="." unique_id=646250812 instance=ExtResource("5_tmr53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.05, 3)
