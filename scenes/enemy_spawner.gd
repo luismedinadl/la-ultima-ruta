@@ -3,36 +3,61 @@ extends Node3D
 @export var enemy_scene: PackedScene = preload(
 	"res://scenes/enemies/enemy_dummy.tscn"
 )
-@export var enemies_per_wave: int = 3
+@export var first_wave_enemies: int = 3
+@export var enemies_added_per_wave: int = 1
 @export var spawn_interval: float = 1.0
+@export var time_between_waves: float = 4.0
 @export var spawn_radius: float = 8.0
 
-var spawn_timer := 0.0
+var current_wave := 1
+var enemies_to_spawn := 0
 var enemies_spawned := 0
-var wave_complete := false
+var spawn_timer := 0.0
+var next_wave_timer := 0.0
+var waiting_for_next_wave := false
 
 
 func _ready() -> void:
 	randomize()
+	_start_wave()
 
 
 func _process(delta: float) -> void:
-	if wave_complete:
+	if waiting_for_next_wave:
+		next_wave_timer -= delta
+
+		if next_wave_timer <= 0.0:
+			waiting_for_next_wave = false
+			_start_wave()
+
 		return
 
-	if enemies_spawned < enemies_per_wave:
+	if enemies_spawned < enemies_to_spawn:
 		spawn_timer -= delta
 
 		if spawn_timer <= 0.0:
-			spawn_enemy()
+			_spawn_enemy()
 			enemies_spawned += 1
 			spawn_timer = spawn_interval
 	elif get_child_count() == 0:
-		wave_complete = true
-		print("Oleada completada.")
+		print("Oleada ", current_wave, " completada.")
+
+		current_wave += 1
+		waiting_for_next_wave = true
+		next_wave_timer = time_between_waves
 
 
-func spawn_enemy() -> void:
+func _start_wave() -> void:
+	enemies_spawned = 0
+	enemies_to_spawn = first_wave_enemies + (
+		(current_wave - 1) * enemies_added_per_wave
+	)
+	spawn_timer = 0.0
+
+	print("Comienza la oleada ", current_wave, ".")
+
+
+func _spawn_enemy() -> void:
 	var enemy := enemy_scene.instantiate() as CharacterBody3D
 
 	var direction := Vector3(
