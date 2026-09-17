@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cg5bbw37ru2in" path="res://scenes/characters/nico_player.tscn" id="1_2venv"]
 [ext_resource type="Script" uid="uid://ce1cl1qbvxcpu" path="res://scenes/test_level.gd" id="1_paw1w"]
-[ext_resource type="PackedScene" uid="uid://dm0swyc52nirt" path="res://scenes/enemies/enemy_dummy.tscn" id="3_j6w7d"]
+[ext_resource type="Script" uid="uid://dndyatylcghsy" path="res://scenes/enemy_spawner.gd" id="4_x4b8f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
 size = Vector3(40, 0.5, 40)
@@ -53,5 +53,5 @@ text = "GAME OVER
 Presiona R para reiniciar"
 horizontal_alignment = 1
 
-[node name="EnemyDummy" parent="." unique_id=987585105 instance=ExtResource("3_j6w7d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+[node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
+script = ExtResource("4_x4b8f")
