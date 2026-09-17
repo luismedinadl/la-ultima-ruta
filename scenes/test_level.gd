@@ -7,6 +7,8 @@ extends Node3D
 @onready var camera: Camera3D = $Camera3D
 @onready var health_bar: ProgressBar = $HUD/HealthBar
 @onready var game_over_label: Label = $HUD/GameOverLabel
+@onready var wave_label: Label = $HUD/WaveLabel
+@onready var enemy_spawner = $EnemySpawner
 
 
 func _ready() -> void:
@@ -28,6 +30,11 @@ func _process(delta: float) -> void:
 
 	camera.look_at(player.global_position + Vector3(0.0, 2.0, 0.0))
 	health_bar.value = player.health
+
+	wave_label.text = "Oleada: %d | Enemigos: %d" % [
+		enemy_spawner.current_wave,
+		enemy_spawner.get_child_count()
+	]
 
 	if player.is_dead:
 		game_over_label.show()

@@ -53,5 +53,13 @@ text = "GAME OVER
 Presiona R para reiniciar"
 horizontal_alignment = 1
 
+[node name="WaveLabel" type="Label" parent="HUD" unique_id=1261797240]
+offset_left = 30.0
+offset_top = 75.0
+offset_right = 330.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 22
+text = "Oleada: 1 | Enemigos: 0"
+
 [node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
 script = ExtResource("4_x4b8f")
