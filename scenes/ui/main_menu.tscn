@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dspbpfric1whr"]
+
+[ext_resource type="Script" uid="uid://6octvtehtxm3" path="res://scenes/ui/main_menu.gd" id="1_sl1te"]
+
+[node name="MainMenu" type="Control" unique_id=1853615813]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sl1te")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1370593393]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.043137256, 0.0627451, 0.1254902, 1)
+
+[node name="TitleLabel" type="Label" parent="." unique_id=2008801596]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 190.0
+offset_right = 850.0
+offset_bottom = 260.0
+theme_override_font_sizes/font_size = 48
+text = "LA ÚLTIMA RUTA"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="." unique_id=82182675]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 340.0
+offset_right = 676.0
+offset_bottom = 396.0
+theme_override_font_sizes/font_size = 24
+text = "JUGAR"
