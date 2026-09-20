@@ -71,6 +71,17 @@ offset_bottom = 150.0
 theme_override_font_sizes/font_size = 20
 text = "Objetivo: Recoge el paquete"
 
+[node name="DeliveryCompleteLabel" type="Label" parent="HUD" unique_id=220773590]
+visible = false
+offset_left = 350.0
+offset_top = 270.0
+offset_right = 850.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 32
+text = "ENTREGA COMPLETADA
+Presiona R para reiniciar"
+horizontal_alignment = 1
+
 [node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
 script = ExtResource("4_x4b8f")
 
