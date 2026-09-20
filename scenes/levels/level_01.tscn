@@ -112,6 +112,7 @@ Presiona R para reiniciar"
 horizontal_alignment = 1
 
 [node name="PausePanel" type="Panel" parent="HUD" unique_id=899453204]
+visible = false
 offset_left = 376.0
 offset_top = 200.0
 offset_right = 776.0
@@ -151,6 +152,51 @@ offset_left = 100.0
 offset_top = 185.0
 offset_right = 300.0
 offset_bottom = 227.0
+theme_override_font_sizes/font_size = 20
+text = "MENÚ PRINCIPAL"
+
+[node name="VictoryPanel" type="Panel" parent="HUD" unique_id=14983656]
+visible = false
+offset_left = 326.0
+offset_top = 200.0
+offset_right = 826.0
+offset_bottom = 450.0
+
+[node name="VictoryTitle" type="Label" parent="HUD/VictoryPanel" unique_id=1882331153]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 30.0
+offset_right = 475.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 30
+text = "¡ENTREGA COMPLETADA!"
+horizontal_alignment = 1
+
+[node name="VictoryMessage" type="Label" parent="HUD/VictoryPanel" unique_id=575079336]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 90.0
+offset_right = 475.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 18
+text = "La ruta está asegurada por ahora."
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="HUD/VictoryPanel" unique_id=1865769111]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 140.0
+offset_right = 350.0
+offset_bottom = 182.0
+theme_override_font_sizes/font_size = 20
+text = "JUGAR DE NUEVO"
+
+[node name="VictoryMenuButton" type="Button" parent="HUD/VictoryPanel" unique_id=1901750885]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 190.0
+offset_right = 350.0
+offset_bottom = 232.0
 theme_override_font_sizes/font_size = 20
 text = "MENÚ PRINCIPAL"
 
