@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="La Última Ruta"
-run/main_scene="uid://biqra2qk4ssjo"
+run/main_scene="uid://dwhdxwauvobvj"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
