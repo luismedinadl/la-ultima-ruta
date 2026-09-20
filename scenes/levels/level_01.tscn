@@ -111,6 +111,49 @@ text = "ENTREGA COMPLETADA
 Presiona R para reiniciar"
 horizontal_alignment = 1
 
+[node name="PausePanel" type="Panel" parent="HUD" unique_id=899453204]
+offset_left = 376.0
+offset_top = 200.0
+offset_right = 776.0
+offset_bottom = 450.0
+
+[node name="PauseTitle" type="Label" parent="HUD/PausePanel" unique_id=888312973]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 375.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 32
+text = "PAUSA"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="HUD/PausePanel" unique_id=1867754029]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 85.0
+offset_right = 300.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 20
+text = "CONTINUAR"
+
+[node name="RestartButton" type="Button" parent="HUD/PausePanel" unique_id=465634853]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 135.0
+offset_right = 300.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 20
+text = "REINICIAR"
+
+[node name="MenuButton" type="Button" parent="HUD/PausePanel" unique_id=1673145298]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 185.0
+offset_right = 300.0
+offset_bottom = 227.0
+theme_override_font_sizes/font_size = 20
+text = "MENÚ PRINCIPAL"
+
 [node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
 script = ExtResource("3_1ey3t")
 
