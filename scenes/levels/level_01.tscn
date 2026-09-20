@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://dwhdxwauvobvj"]
+
+[ext_resource type="Script" uid="uid://ce1cl1qbvxcpu" path="res://scenes/test_level.gd" id="1_qdh5e"]
+[ext_resource type="PackedScene" uid="uid://cg5bbw37ru2in" path="res://scenes/characters/nico_player.tscn" id="2_50wog"]
+[ext_resource type="Script" uid="uid://dndyatylcghsy" path="res://scenes/enemy_spawner.gd" id="3_1ey3t"]
+[ext_resource type="PackedScene" uid="uid://6xsjb6oguoi2" path="res://scenes/objects/delivery_package.tscn" id="4_t0hvh"]
+[ext_resource type="PackedScene" uid="uid://b2dmskumko1je" path="res://scenes/objects/delivery_zone.tscn" id="5_kfebt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
+size = Vector3(40, 0.5, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pp72"]
+albedo_color = Color(0.105882354, 0.14901961, 0.21960784, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6pp72"]
+material = SubResource("StandardMaterial3D_6pp72")
+size = Vector2(40, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjnlm"]
+albedo_color = Color(0.22352941, 0.28627452, 0.36078432, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tyqlt"]
+material = SubResource("StandardMaterial3D_hjnlm")
+size = Vector2(8, 36)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyqlt"]
+albedo_color = Color(0.44313726, 0.5019608, 0.5882353, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6pp72"]
+material = SubResource("StandardMaterial3D_tyqlt")
+size = Vector3(2, 0.15, 36)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tyqlt"]
+size = Vector3(5, 4, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdh5e"]
+albedo_color = Color(0.14509805, 0.21176471, 0.2901961, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tyqlt"]
+material = SubResource("StandardMaterial3D_qdh5e")
+size = Vector3(5, 4, 5)
+
+[node name="Level01" type="Node3D" unique_id=1578690313]
+script = ExtResource("1_qdh5e")
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1700177946]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1468344900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_6pp72")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground/CollisionShape3D" unique_id=1953895558]
+mesh = SubResource("PlaneMesh_6pp72")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1135774130]
+transform = Transform3D(0.81915206, -0.46984634, 0.32898995, 0, 0.57357645, 0.81915206, -0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=80394037]
+transform = Transform3D(0.809017, -0.3371398, 0.4814855, 0, 0.81915206, 0.57357645, -0.58778524, -0.4640331, 0.6627079, 10, 12, 14)
+current = true
+
+[node name="NicoPlayer" parent="." unique_id=624824844 instance=ExtResource("2_50wog")]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=536029507]
+
+[node name="HealthBar" type="ProgressBar" parent="HUD" unique_id=1611238189]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 290.0
+offset_bottom = 58.0
+max_value = 5.0
+value = 5.0
+show_percentage = false
+
+[node name="GameOverLabel" type="Label" parent="HUD" unique_id=1579114051]
+visible = false
+offset_left = 420.0
+offset_top = 270.0
+offset_right = 780.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 32
+text = "GAME OVER
+Presiona R para reiniciar"
+horizontal_alignment = 1
+
+[node name="WaveLabel" type="Label" parent="HUD" unique_id=1261797240]
+offset_left = 30.0
+offset_top = 75.0
+offset_right = 330.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 22
+text = "Oleada: 1 | Enemigos: 0"
+
+[node name="ObjectiveLabel" type="Label" parent="HUD" unique_id=1040130453]
+offset_left = 30.0
+offset_top = 110.0
+offset_right = 480.0
+offset_bottom = 150.0
+theme_override_font_sizes/font_size = 20
+text = "Objetivo: Recoge el paquete"
+
+[node name="DeliveryCompleteLabel" type="Label" parent="HUD" unique_id=220773590]
+visible = false
+offset_left = 350.0
+offset_top = 270.0
+offset_right = 850.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 32
+text = "ENTREGA COMPLETADA
+Presiona R para reiniciar"
+horizontal_alignment = 1
+
+[node name="EnemySpawner" type="Node3D" parent="." unique_id=1814915950]
+script = ExtResource("3_1ey3t")
+
+[node name="DeliveryPackage" parent="." unique_id=241478749 instance=ExtResource("4_t0hvh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.35, -3)
+
+[node name="DeliveryZone" parent="." unique_id=646250812 instance=ExtResource("5_kfebt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.05, 3)
+
+[node name="Road" type="MeshInstance3D" parent="." unique_id=2108968048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
+mesh = SubResource("PlaneMesh_tyqlt")
+
+[node name="SidewalkLeft" type="MeshInstance3D" parent="." unique_id=8990021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.075, 0)
+mesh = SubResource("BoxMesh_6pp72")
+
+[node name="SidewalkRight" type="MeshInstance3D" parent="." unique_id=942714093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.075, 0)
+mesh = SubResource("BoxMesh_6pp72")
+
+[node name="BuildingBlock01" type="StaticBody3D" parent="." unique_id=1665323909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildingBlock01" unique_id=652425518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tyqlt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BuildingBlock01" unique_id=350618325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_tyqlt")
+
+[node name="BuildingBlock02" type="StaticBody3D" parent="." unique_id=879394934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildingBlock02" unique_id=2076823685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tyqlt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BuildingBlock02" unique_id=378575727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_tyqlt")
+
+[node name="BuildingBlock03" type="StaticBody3D" parent="." unique_id=931430096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildingBlock03" unique_id=1550330368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tyqlt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BuildingBlock03" unique_id=859011019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_tyqlt")
+
+[node name="BuildingBlock04" type="StaticBody3D" parent="." unique_id=161423109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildingBlock04" unique_id=1858751948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tyqlt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BuildingBlock04" unique_id=449599441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_tyqlt")
