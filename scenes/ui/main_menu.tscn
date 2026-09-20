@@ -35,3 +35,12 @@ offset_right = 676.0
 offset_bottom = 396.0
 theme_override_font_sizes/font_size = 24
 text = "JUGAR"
+
+[node name="QuitButton" type="Button" parent="." unique_id=1934192213]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 410.0
+offset_right = 676.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 24
+text = "SALIR"
