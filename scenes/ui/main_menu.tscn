@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dspbpfric1whr"]
 
 [ext_resource type="Script" uid="uid://6octvtehtxm3" path="res://scenes/ui/main_menu.gd" id="1_sl1te"]
+[ext_resource type="AudioStream" uid="uid://ci6mmdikrx1tg" path="res://assets/audio/ui/click_001.ogg" id="2_fe2o3"]
 
 [node name="MainMenu" type="Control" unique_id=1853615813]
 layout_mode = 3
@@ -44,3 +45,6 @@ offset_right = 676.0
 offset_bottom = 466.0
 theme_override_font_sizes/font_size = 24
 text = "SALIR"
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1289617665]
+stream = ExtResource("2_fe2o3")
