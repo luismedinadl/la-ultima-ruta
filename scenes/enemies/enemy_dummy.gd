@@ -9,8 +9,11 @@ extends CharacterBody3D
 var health: int
 var player: CharacterBody3D
 var attack_cooldown_timer := 0.0
+var is_dead := false
 
 @onready var hurt_sound: AudioStreamPlayer = $HurtSound
+@onready var attack_sound: AudioStreamPlayer = $AttackSound
+@onready var death_sound: AudioStreamPlayer = $DeathSound
 
 
 func _ready() -> void:
@@ -19,6 +22,8 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
 	if player == null:
 		player = get_tree().get_first_node_in_group("player") as CharacterBody3D
 		return
@@ -53,16 +58,27 @@ func _attack_player() -> void:
 		return
 
 	attack_cooldown_timer = attack_cooldown
+	attack_sound.play()
 	player.take_damage(1)
 	print("El enemigo atacó a Nico.")
 
 
 func take_damage(amount: int) -> void:
-	hurt_sound.play()
+	if is_dead:
+		return
+
 	health -= amount
 	print("Enemigo golpeado. Vida restante: ", health)
 
 	if health <= 0:
+		is_dead = true
+		velocity = Vector3.ZERO
+		collision_layer = 0
+		collision_mask = 0
+
 		print("Enemigo eliminado.")
+		death_sound.play()
+		await death_sound.finished
 		queue_free()
-		
+	else:
+		hurt_sound.play()
