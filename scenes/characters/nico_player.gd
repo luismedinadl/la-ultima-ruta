@@ -12,10 +12,11 @@ extends CharacterBody3D
 @export var attack_cooldown: float = 0.65
 
 @export_category("Salud")
-@export var max_health: int = 5
+@export var max_health: int = 20
 
 @onready var animation_player: AnimationPlayer = $Visual/AnimationPlayer
 @onready var attack_area: Area3D = $AttackArea
+@onready var attack_sound: AudioStreamPlayer = $AttackSound
 
 var health: int
 var is_attacking := false
@@ -102,6 +103,7 @@ func _start_attack() -> void:
 	attack_cooldown_timer = attack_cooldown
 	animation_player.speed_scale = 1.0
 	animation_player.play("Nico_Knife_Attack")
+	attack_sound.play()
 	_damage_enemies_in_range()
 
 

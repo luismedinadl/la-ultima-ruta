@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://jf5pcso0paqn" path="res://scenes/characters/nico.tscn" id="1_6jhpq"]
 [ext_resource type="Script" uid="uid://b6lsdle2dsier" path="res://scenes/characters/nico_player.gd" id="1_sru0y"]
+[ext_resource type="AudioStream" uid="uid://dak0u7aohnahc" path="res://assets/audio/sfx/impactPunch_medium_000.ogg" id="3_m5n88"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6pp72"]
 radius = 0.55
@@ -25,3 +26,6 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea" unique_id=1427176730]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3, 1.2)
 shape = SubResource("BoxShape3D_6pp72")
+
+[node name="AttackSound" type="AudioStreamPlayer" parent="." unique_id=1164921379]
+stream = ExtResource("3_m5n88")
