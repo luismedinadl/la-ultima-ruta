@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dm0swyc52nirt"]
 
 [ext_resource type="Script" uid="uid://dnt8up8rsscvj" path="res://scenes/enemies/enemy_dummy.gd" id="1_yq0tb"]
+[ext_resource type="AudioStream" uid="uid://b2sn85bb642au" path="res://assets/audio/sfx/impactSoft_medium_000.ogg" id="2_mtue1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyqlt"]
 albedo_color = Color(1, 0, 0, 1)
@@ -19,3 +20,6 @@ mesh = SubResource("CapsuleMesh_6pp72")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1944059644]
 shape = SubResource("CapsuleShape3D_6pp72")
+
+[node name="HurtSound" type="AudioStreamPlayer" parent="." unique_id=574625772]
+stream = ExtResource("2_mtue1")

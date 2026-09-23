@@ -10,6 +10,8 @@ var health: int
 var player: CharacterBody3D
 var attack_cooldown_timer := 0.0
 
+@onready var hurt_sound: AudioStreamPlayer = $HurtSound
+
 
 func _ready() -> void:
 	health = max_health
@@ -56,6 +58,7 @@ func _attack_player() -> void:
 
 
 func take_damage(amount: int) -> void:
+	hurt_sound.play()
 	health -= amount
 	print("Enemigo golpeado. Vida restante: ", health)
 
