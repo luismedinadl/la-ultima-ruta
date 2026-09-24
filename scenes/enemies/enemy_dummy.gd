@@ -11,8 +11,7 @@ var player: CharacterBody3D
 var attack_cooldown_timer := 0.0
 var is_dead := false
 
-@onready var hurt_sound: AudioStreamPlayer = $HurtSound
-@onready var attack_sound: AudioStreamPlayer = $AttackSound
+@onready var groan_sound: AudioStreamPlayer = $GroanSound
 @onready var death_sound: AudioStreamPlayer = $DeathSound
 
 
@@ -58,7 +57,6 @@ func _attack_player() -> void:
 		return
 
 	attack_cooldown_timer = attack_cooldown
-	attack_sound.play()
 	player.take_damage(1)
 	print("El enemigo atacó a Nico.")
 
@@ -81,4 +79,4 @@ func take_damage(amount: int) -> void:
 		await death_sound.finished
 		queue_free()
 	else:
-		hurt_sound.play()
+		groan_sound.play()

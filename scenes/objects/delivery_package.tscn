@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6xsjb6oguoi2"]
 
 [ext_resource type="Script" uid="uid://beb68e7lw7y3e" path="res://scenes/objects/delivery_package.gd" id="1_47jtq"]
+[ext_resource type="AudioStream" uid="uid://w06aig4jybab" path="res://assets/audio/sfx/package_pickup.ogg" id="2_px4g1"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_6pp72"]
 size = Vector3(1, 0.7, 0.7)
@@ -16,3 +17,6 @@ mesh = SubResource("BoxMesh_6pp72")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1129253204]
 shape = SubResource("BoxShape3D_6pp72")
+
+[node name="PickupSound" type="AudioStreamPlayer" parent="." unique_id=68136070]
+stream = ExtResource("2_px4g1")
