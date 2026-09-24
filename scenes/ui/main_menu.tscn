@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://6octvtehtxm3" path="res://scenes/ui/main_menu.gd" id="1_sl1te"]
 [ext_resource type="AudioStream" uid="uid://ci6mmdikrx1tg" path="res://assets/audio/ui/click_001.ogg" id="2_fe2o3"]
+[ext_resource type="AudioStream" uid="uid://b1un6euwc6vof" path="res://assets/audio/music/menu_ambient.ogg" id="3_1g8jr"]
 
 [node name="MainMenu" type="Control" unique_id=1853615813]
 layout_mode = 3
@@ -48,3 +49,8 @@ text = "SALIR"
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1289617665]
 stream = ExtResource("2_fe2o3")
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="." unique_id=1257263222]
+stream = ExtResource("3_1g8jr")
+volume_db = -10.0
+autoplay = true
