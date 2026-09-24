@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://6xsjb6oguoi2" path="res://scenes/objects/delivery_package.tscn" id="4_t0hvh"]
 [ext_resource type="PackedScene" uid="uid://b2dmskumko1je" path="res://scenes/objects/delivery_zone.tscn" id="5_kfebt"]
 [ext_resource type="PackedScene" uid="uid://fctqs4f7ohaw" path="res://scenes/objects/street_lamp.tscn" id="6_50wog"]
+[ext_resource type="AudioStream" uid="uid://22csu5jhban3" path="res://assets/audio/music/level_ambient.mp3" id="7_1ey3t"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6pp72"]
 size = Vector3(40, 0.5, 40)
@@ -288,3 +289,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 8)
 
 [node name="StreetLamp4" parent="." unique_id=166367435 instance=ExtResource("6_50wog")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8)
+
+[node name="LevelMusic" type="AudioStreamPlayer" parent="." unique_id=490650236]
+stream = ExtResource("7_1ey3t")
+volume_db = -10.0
+autoplay = true
