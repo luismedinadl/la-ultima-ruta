@@ -159,8 +159,40 @@ func menu(can_continue: bool) -> void:
 	survival.disabled = not RouteSave.story_completed()
 	survival.tooltip_text = "Completa la campaña para desbloquearlo." if survival.disabled else "Sobrevive a oleadas sin límite."
 	button(screen, "Salir", Rect2(178, 266 if mobile else 262, 220, 44 if mobile else 32), "quit")
-	button(screen, "Español" if TranslationServer.get_locale() == "en" else "English", Rect2(445,266,118,44), "language")
+	var settings := button(screen, "", Rect2(518,10,46,44), "settings")
+	settings.icon = preload("res://assets/ui/settings_gear.svg")
+	settings.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	settings.tooltip_text = tr("Configuración")
+	settings.accessibility_name = settings.tooltip_text
 	start.grab_focus()
+
+func settings_menu(audio: RouteAudio) -> void:
+	close_pause()
+	pause_panel = panel(root, Rect2(0,0,576,324), Color(0,0,0,0.72))
+	pause_panel.set_meta("full_bleed", true)
+	var box := panel(pause_panel, Rect2(112,39,352,246), INK)
+	var heading := label(box, "Configuración", Rect2(16,12,320,28), 20, ORANGE)
+	heading.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label(box, "Idioma", Rect2(24,60,130,24), 15)
+	var toggle := button(box, "Español" if TranslationServer.get_locale() == "es" else "English", Rect2(164,48,164,44), "language")
+	label(box, "Volumen de la música", Rect2(24,105,245,22), 15)
+	var amount := label(box, "%d%%" % audio.music_percent, Rect2(265,105,63,22), 15)
+	amount.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	var volume := HSlider.new()
+	volume.position = Vector2(24,130)
+	volume.size = Vector2(304,44)
+	volume.step = 5
+	volume.value = audio.music_percent
+	volume.accessibility_name = tr("Volumen de la música")
+	box.add_child(volume)
+	volume.value_changed.connect(func(value: float):
+		audio.set_music_percent(roundi(value))
+		amount.text = "%d%%" % audio.music_percent)
+	volume.drag_ended.connect(func(changed: bool):
+		if changed: audio.save_music_volume())
+	volume.focus_exited.connect(audio.save_music_volume)
+	button(box, "Volver", Rect2(70,187,212,44), "back_menu")
+	toggle.grab_focus()
 
 func locked_button_at(point: Vector2) -> Button:
 	for child in screen.get_children():

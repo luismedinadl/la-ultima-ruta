@@ -156,6 +156,9 @@ func build_street() -> void:
 	add_sprite(buildings, RouteArt.freight_facade(0) if level_number == 2 else RouteArt.cell("tiles/architecture.png", 3, 2, 0, 0, 4), Vector2(pickup_x, 180), Vector2(222, 184), true)
 	add_sprite(buildings, RouteArt.freight_facade(5) if level_number == 2 else RouteArt.cell("tiles/architecture.png", 3, 2, 1, 0, 4), Vector2(delivery_x, 180), Vector2(222, 184), true)
 
+	if level_number == 1:
+		RouteStory.caption_at(buildings, "Shop 24", Vector2(pickup_x, 108), 115)
+
 	if level_number == 2:
 		var cutout := ShaderMaterial.new()
 		cutout.shader = preload("res://scripts/character_clip.gdshader")

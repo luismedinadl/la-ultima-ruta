@@ -44,9 +44,11 @@ func handle_command(action: String) -> void:
 		return
 	audio.cue("ui", -17)
 	match action:
+		"settings": ui.settings_menu(audio)
 		"language":
 			Language.select("es" if TranslationServer.get_locale() == "en" else "en")
 			ui.menu(RouteSave.can_continue())
+			ui.settings_menu(audio)
 		"new": start_intro()
 		"survival": start_survival()
 		"select_level": ui.route_select()
@@ -348,6 +350,7 @@ func _process(_delta: float) -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST and is_instance_valid(touch):
+		if mode == "menu" and is_instance_valid(ui.pause_panel): ui.close_pause()
 		if mode == "playing":
 			if get_tree().paused: resume_route()
 			else: pause_route()

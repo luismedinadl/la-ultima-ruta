@@ -1676,3 +1676,12 @@ msgstr "continue"
 
 msgid "cerrar documento"
 msgstr "close document"
+
+msgid "Configuración"
+msgstr "Settings"
+
+msgid "Idioma"
+msgstr "Language"
+
+msgid "Volumen de la música"
+msgstr "Music volume"
