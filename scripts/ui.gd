@@ -170,7 +170,7 @@ func settings_menu(audio: RouteAudio) -> void:
 	close_pause()
 	pause_panel = panel(root, Rect2(0,0,576,324), Color(0,0,0,0.72))
 	pause_panel.set_meta("full_bleed", true)
-	var box := panel(pause_panel, Rect2(112,39,352,246), INK)
+	var box := panel(pause_panel, Rect2(112,15,352,294), INK)
 	var heading := label(box, "Configuración", Rect2(16,12,320,28), 20, ORANGE)
 	heading.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label(box, "Idioma", Rect2(24,60,130,24), 15)
@@ -191,8 +191,26 @@ func settings_menu(audio: RouteAudio) -> void:
 	volume.drag_ended.connect(func(changed: bool):
 		if changed: audio.save_music_volume())
 	volume.focus_exited.connect(audio.save_music_volume)
-	button(box, "Volver", Rect2(70,187,212,44), "back_menu")
+	button(box, "Política de privacidad", Rect2(24,181,304,44), "privacy")
+	button(box, "Volver", Rect2(70,235,212,44), "back_menu")
 	toggle.grab_focus()
+
+func privacy_menu() -> void:
+	close_pause()
+	pause_panel = panel(root, Rect2(0,0,576,324), Color(0,0,0,0.8))
+	pause_panel.set_meta("full_bleed", true)
+	pause_panel.set_meta("privacy", true)
+	var box := panel(pause_panel, Rect2(28,10,520,304), INK)
+	var title := label(box, "Política de privacidad", Rect2(18,8,484,28), 19, ORANGE)
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var policy := RichTextLabel.new()
+	policy.position = Vector2(18,42)
+	policy.size = Vector2(484,198)
+	policy.add_theme_font_size_override("normal_font_size", 14)
+	policy.focus_mode = Control.FOCUS_ALL
+	policy.text = tr("The Last Route funciona sin conexión y sin cuentas. El juego no recopila ni comparte datos personales con el desarrollador ni con terceros. No incluye publicidad ni herramientas de seguimiento.\n\nTu dispositivo guarda el punto de control, los niveles completados y tus preferencias de idioma y música en el almacenamiento privado del juego. El idioma del dispositivo se consulta para elegir el idioma inicial. Estos datos se usan para reanudar la partida y recordar tus ajustes.\n\nLos archivos locales permanecen hasta que se reemplazan o se eliminan. Para borrarlos en Android, abre Ajustes → Aplicaciones → The Last Route → Almacenamiento → Borrar datos. Esto también elimina los niveles desbloqueados y las preferencias.\n\nPara consultas de privacidad, abre la ficha de The Last Route en Google Play y usa el correo del desarrollador en Asistencia de la aplicación.")
+	box.add_child(policy)
+	button(box, "Volver", Rect2(154,250,212,44), "settings").grab_focus()
 
 func locked_button_at(point: Vector2) -> Button:
 	for child in screen.get_children():

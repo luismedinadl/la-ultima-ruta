@@ -45,6 +45,7 @@ func handle_command(action: String) -> void:
 	audio.cue("ui", -17)
 	match action:
 		"settings": ui.settings_menu(audio)
+		"privacy": ui.privacy_menu()
 		"language":
 			Language.select("es" if TranslationServer.get_locale() == "en" else "en")
 			ui.menu(RouteSave.can_continue())
@@ -331,7 +332,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		if mode == "playing":
 			if get_tree().paused: resume_route()
 			else: pause_route()
-		elif is_instance_valid(ui.pause_panel): ui.close_pause()
+		elif is_instance_valid(ui.pause_panel):
+			if ui.pause_panel.get_meta("privacy", false): ui.settings_menu(audio)
+			else: ui.close_pause()
 		get_viewport().set_input_as_handled()
 	elif event.is_action_pressed("route_interact") and mode == "playing" and not get_tree().paused:
 		if ui.dialogue_active: ui.advance_dialogue()
@@ -350,7 +353,9 @@ func _process(_delta: float) -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST and is_instance_valid(touch):
-		if mode == "menu" and is_instance_valid(ui.pause_panel): ui.close_pause()
+		if mode == "menu" and is_instance_valid(ui.pause_panel):
+			if ui.pause_panel.get_meta("privacy", false): ui.settings_menu(audio)
+			else: ui.close_pause()
 		if mode == "playing":
 			if get_tree().paused: resume_route()
 			else: pause_route()
