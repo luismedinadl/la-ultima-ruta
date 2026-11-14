@@ -174,7 +174,7 @@ func start_wave(number: int) -> void:
 		3: queue_group(4,1,1)
 		4,5: queue_group(4,2,0)
 	audio.cue("wave",-15)
-	announcement.emit("ENCUENTRO %d / 5 · ATENCIÓN A LOS ACCESOS" % number)
+	announcement.emit(tr("ENCUENTRO %d / 5 · ATENCIÓN A LOS ACCESOS") % number)
 
 func advance_encounter() -> void:
 	if not arrivals.is_empty(): return
@@ -186,7 +186,7 @@ func advance_encounter() -> void:
 	if remaining()>0: return
 	set_stage(stage+1)
 	refresh_objects()
-	announcement.emit("PASO DESPEJADO · "+goal)
+	announcement.emit(tr("PASO DESPEJADO · ") + tr(goal))
 	checkpoint.emit(snapshot())
 
 func enemy_killed(_enemy: RouteEnemy) -> void:
@@ -197,13 +197,19 @@ func clamp_actor(pos: Vector2) -> Vector2:
 	var right := minf(world_length-30,arena_center+280) if stage in FIGHT_STAGES else minf(world_length-30,destination()+90)
 	return Vector2(clampf(pos.x,left,right),clampf(pos.y,204,306))
 
+func interaction_action() -> String:
+	if stage in FIGHT_STAGES: return ""
+	if absf(player.position.x-destination())<65 and player.position.y<275:
+		return {2:"comprobar entrada",3:"activar energía",5:"comprobar conexión",8:"conectar antena",9:"enviar a la central",12:"escuchar la radio",15:"salir de la estación"}.get(stage,"")
+	return ""
+
 func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
 	if stage in FIGHT_STAGES: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
 	if absf(player.position.x-destination())<65 and player.position.y>=275:
 		return "Acércate al marcador para interactuar"
-	if absf(player.position.x-destination())<65 and player.position.y<275:
-		return "E / Enter · "+{2:"comprobar entrada",3:"activar energía",5:"comprobar conexión",8:"conectar antena",9:"enviar a la central",12:"escuchar la radio",15:"salir de la estación"}.get(stage,"interactuar")
-	return "Objetivo · %d m →   Tab · instrucciones" % int(absf(destination()-player.position.x)/METRE)
+	return tr("Objetivo · %d m →   Tab · instrucciones") % int(absf(destination()-player.position.x)/METRE)
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time>0 or absf(player.position.x-destination())>=65 or player.position.y>=275: return

@@ -135,7 +135,7 @@ func refresh() -> void:
 	icons.attack = 2 if player is ShotgunPlayer and player.weapon_slot == 2 else 1 if player.pistol_equipped else 0
 	buttons.switch.visible = player.has_pistol
 	buttons.reload.visible = player.has_pistol and player.pistol_equipped
-	buttons.interact.visible = app.level.interaction_hint().begins_with("E / Enter")
+	buttons.interact.visible = not app.level.interaction_action().is_empty()
 	for key in buttons:
 		var disabled := not available(key)
 		buttons[key].texture = icon(icons[key],2 if disabled else 1 if fingers.values().has(key) else 0)

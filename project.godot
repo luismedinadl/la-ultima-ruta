@@ -31,6 +31,11 @@ window/size/window_height_override=648
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
+[internationalization]
+
+locale/fallback="es"
+locale/translations=PackedStringArray("res://assets/i18n/en.po")
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

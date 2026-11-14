@@ -159,6 +159,7 @@ func menu(can_continue: bool) -> void:
 	survival.disabled = not RouteSave.story_completed()
 	survival.tooltip_text = "Completa la campaña para desbloquearlo." if survival.disabled else "Sobrevive a oleadas sin límite."
 	button(screen, "Salir", Rect2(178, 266 if mobile else 262, 220, 44 if mobile else 32), "quit")
+	button(screen, "Español" if TranslationServer.get_locale() == "en" else "English", Rect2(445,266,118,44), "language")
 	start.grab_focus()
 
 func locked_button_at(point: Vector2) -> Button:
@@ -278,7 +279,7 @@ func start_dialogue(content: Array) -> void:
 func show_line() -> void:
 	var entry: Dictionary = lines[line_index]
 	dialog_name.text = entry.name
-	dialog_text.text = entry.text
+	dialog_text.text = tr(entry.text)
 	dialog_face.texture = CorporateGuardArt.portrait() if bool(entry.get("corporate_guard",false)) else HarborArt.portrait(int(entry.portrait)-7) if int(entry.get("portrait",3))>=7 else load(BroadcastArt.FOLDER+"operator.png") if int(entry.get("portrait",3))==6 else RescueArt.portrait(int(entry.get("portrait",4))-4) if int(entry.get("portrait",3))>=4 else RouteArt.portrait(int(entry.get("portrait",3)))
 	dialog_text.visible_characters = 0
 	reveal = 0.0
@@ -330,10 +331,10 @@ func update_hud(hp: int, goal: String, elapsed: float, remaining: int, prompt: S
 	health_text.text = str(hp)
 	objective.text = goal
 	stats.text = ("%02d:%02d" % [floori(elapsed / 60.0), int(elapsed) % 60])
-	if remaining > 0: stats.text = str(remaining) + " infectados  ·  " + stats.text
-	hint.text = prompt
+	if remaining > 0: stats.text = str(remaining) + tr(" infectados  ·  ") + stats.text
+	hint.text = tr(prompt)
 	if mobile:
-		hint.text = prompt.replace("E / Enter · ","Toca la mano · ").replace("   Tab · documentos", "").replace("   Tab · instrucciones", "")
+		hint.text = tr(prompt).replace("E / Enter · ",tr("Toca la mano · ")).trim_suffix(tr("   Tab · documentos")).trim_suffix(tr("   Tab · instrucciones"))
 		if prompt.contains("Espacio"): hint.text = "Mantén pulsado para atacar" if attack_tutorial else ""
 
 func close_pause() -> void:
@@ -369,7 +370,7 @@ func survival_result(waves: int, kills: int, elapsed: float) -> void:
 	hud.hide()
 	screen = panel(root,Rect2(103,36,370,253),INK)
 	label(screen,"FIN DE SUPERVIVENCIA",Rect2(24,17,330,34),21,ORANGE)
-	label(screen,"Oleadas superadas     %d\nEnemigos eliminados   %d\nTiempo sobrevivido     %02d:%02d" % [waves,kills,floori(elapsed/60.0),int(elapsed)%60],Rect2(24,82,320,90),14)
+	label(screen,tr("Oleadas superadas     %d\nEnemigos eliminados   %d\nTiempo sobrevivido     %02d:%02d") % [waves,kills,floori(elapsed/60.0),int(elapsed)%60],Rect2(24,82,320,90),14)
 	button(screen,"Reintentar",Rect2(24,190,150,44),"retry").grab_focus()
 	button(screen,"Menú principal",Rect2(187,190,160,44),"menu")
 
@@ -378,8 +379,8 @@ func result_screen(won: bool, kills: int, damage: int, elapsed: float, level_num
 	hud.hide()
 	screen = panel(root, Rect2(103, 36, 370, 253), Color(0.035, 0.05, 0.09, 0.98))
 	label(screen, ("A SALVO" if level_number == 8 else "PRUEBAS ENVIADAS" if level_number == 7 else "REGISTROS RECUPERADOS" if level_number == 6 else "RESCATE COMPLETADO" if level_number == 5 else "PRUEBAS RECUPERADAS" if level_number == 4 else "ESTACIÓN COMPLETADA" if level_number == 3 else "ENTREGA COMPLETADA") if won else "LA RUTA TERMINÓ", Rect2(24, 17, 330, 34), 22, ORANGE)
-	label(screen, "NIVEL %02d  /  INFORME DE RUTA" % level_number, Rect2(24, 55, 330, 20), 10, CYAN)
-	label(screen, "Zombis eliminados     %d\nDaño recibido             %d\nTiempo de ruta            %02d:%02d" % [kills, damage, floori(elapsed / 60.0), int(elapsed) % 60], Rect2(24, 87, 320, 89), 14)
+	label(screen, tr("NIVEL %02d  /  INFORME DE RUTA") % level_number, Rect2(24, 55, 330, 20), 10, CYAN)
+	label(screen, tr("Zombis eliminados     %d\nDaño recibido             %d\nTiempo de ruta            %02d:%02d") % [kills, damage, floori(elapsed / 60.0), int(elapsed) % 60], Rect2(24, 87, 320, 89), 14)
 	if won and level_number == 8:
 		button(screen, "Menú principal", Rect2(105, 190, 160, 34), "menu").grab_focus()
 	else:
@@ -388,7 +389,7 @@ func result_screen(won: bool, kills: int, damage: int, elapsed: float, level_num
 	if not won and level_number == 8:
 		button(screen,"Reanudar desde el punto seguro",Rect2(24,150,323,30),"retry_checkpoint").grab_focus()
 	if won and level_number < 8:
-		button(screen,"Continuar al Nivel %d" % (level_number+1),Rect2(24,150,323,30),"next_level").grab_focus()
+		button(screen,tr("Continuar al Nivel %d") % (level_number+1),Rect2(24,150,323,30),"next_level").grab_focus()
 	if mobile:
 		screen.position = Vector2(103,8)
 		screen.size.y = 308
@@ -408,7 +409,7 @@ func route_select() -> void:
 	label(screen,"ELIGE LA RUTA",Rect2(22,10,300,28),22)
 	var names := ["Distrito comercial","Distrito de carga","Bajo la ciudad","Zona de contención","Los que quedaron","El registro de las entregas","Que se sepa","La última ruta"]
 	for i in 8:
-		var entry := button(screen,"Nivel %d · %s" % [i+1,names[i]],Rect2(22,39+i*27,296,24),"level%d" % (i+1))
+		var entry := button(screen,tr("Nivel %d · %s") % [i+1,tr(names[i])],Rect2(22,39+i*27,296,24),"level%d" % (i+1))
 		entry.add_theme_font_size_override("font_size",13)
 		if i==0: entry.grab_focus()
 	button(screen,"Volver",Rect2(22,268,296,27),"menu")
@@ -427,7 +428,7 @@ func mobile_route_select() -> void:
 	scroll.add_child(list)
 	var names := ["Distrito comercial","Distrito de carga","Bajo la ciudad","Zona de contención","Los que quedaron","El registro de las entregas","Que se sepa","La última ruta"]
 	for i in 8:
-		var entry := button(list,"Nivel %d · %s" % [i+1,names[i]],Rect2(0,0,370,42),"level%d" % (i+1))
+		var entry := button(list,tr("Nivel %d · %s") % [i+1,tr(names[i])],Rect2(0,0,370,42),"level%d" % (i+1))
 		entry.custom_minimum_size = Vector2(370,44)
 	button(screen,"Volver",Rect2(16,250,392,40),"menu")
 

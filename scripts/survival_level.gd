@@ -129,7 +129,7 @@ func begin_round(number: int) -> void:
 		var supply_x: float = 480.0+[-1,1,-2,2,-3,3,-4,4,-5,5][column]*68.0
 		add_drop("pistol",Vector2(supply_x,252))
 		add_drop("shells",Vector2(supply_x,292))
-	announcement.emit("%s · OLEADA %d%s" % [LOCATIONS[scenery],number," · EL ANCLADO" if number%10==0 else ""])
+	announcement.emit(tr("%s · OLEADA %d%s") % [tr(LOCATIONS[scenery]),number,tr(" · EL ANCLADO") if number%10==0 else ""])
 	update_goal()
 
 func add_drop(kind: String, pos: Vector2) -> void:
@@ -231,8 +231,8 @@ func _process(delta: float) -> void:
 		if drop.position.y > get_viewport_rect().size.y + 20: drop.position = Vector2(rng.randf_range(0, get_viewport_rect().size.x),-20)
 
 func update_goal() -> void:
-	goal = "Oleada %d · %s" % [wave_index,"El Anclado" if wave_index%10==0 else "Elimina a los infectados"]
-	if phase=="supplies": goal = "Oleada %d en %d s · Recoge suministros" % [wave_index,maxi(1,ceili(phase_time))]
+	goal = tr("Oleada %d · %s") % [wave_index,tr("El Anclado" if wave_index%10==0 else "Elimina a los infectados")]
+	if phase=="supplies": goal = tr("Oleada %d en %d s · Recoge suministros") % [wave_index,maxi(1,ceili(phase_time))]
 	elif phase=="transition": goal = "Avanzando al siguiente escenario"
 
 func clamp_actor(pos: Vector2) -> Vector2:
@@ -242,7 +242,8 @@ func clamp_enemy(pos: Vector2) -> Vector2:
 func enemy_path(_pos: Vector2, target: Vector2) -> PackedVector2Array:
 	return PackedVector2Array([target])
 func interact() -> void: pass
+func interaction_action() -> String:
+	return ""
+
 func interaction_hint() -> String:
 	return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
-
-

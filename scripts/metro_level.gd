@@ -157,7 +157,7 @@ func _process(delta: float) -> void:
 	if stage == 2: marker.position.y = package_point.y-44
 	panel_bar.visible = stage == 7
 	panel_bar.value = panel_progress
-	if stage == 7: goal = "Defiende el control · %d%% · %s" % [int(panel_progress/PANEL_SECONDS*100),"INTERRUMPIDO" if panel_interrupted else "reiniciando"]
+	if stage == 7: goal = tr("Defiende el control · %d%% · %s") % [int(panel_progress/PANEL_SECONDS*100),tr("INTERRUMPIDO" if panel_interrupted else "reiniciando")]
 
 func clamp_actor(pos: Vector2) -> Vector2:
 	var min_x := 26.0
@@ -191,7 +191,7 @@ func start_wave(number: int) -> void:
 	arena_center = route_points[number-1]
 	goal = objective_text()
 	build_navigation()
-	announcement.emit("ENCUENTRO %d / 4" % number)
+	announcement.emit(tr("ENCUENTRO %d / 4") % number)
 	audio.cue("wave",-16)
 	audio.cue("zombie",-16)
 	if number == 4:
@@ -221,7 +221,7 @@ func spawn_defense_batch() -> void:
 		spawn_enemy(panel_position+Vector2(-245,65),false,true,false,true)
 		audio.cue("dog_growl",-12)
 	defense_batch += 1
-	announcement.emit("CONTROL · refuerzos %d / 3" % defense_batch)
+	announcement.emit(tr("CONTROL · refuerzos %d / 3") % defense_batch)
 
 func update_defense(delta: float) -> void:
 	defense_elapsed += delta
@@ -249,7 +249,7 @@ func enemy_killed(_enemy: RouteEnemy) -> void:
 			spawn_enemy(Vector2(2920,224),false,false)
 			spawn_enemy(Vector2(2960,294),false,false)
 		goal = objective_text()
-		announcement.emit("PASO DESPEJADO · " + goal)
+		announcement.emit(tr("PASO DESPEJADO · ") + tr(goal))
 		checkpoint.emit(snapshot())
 
 func destination() -> float:
@@ -262,13 +262,18 @@ func destination() -> float:
 func objective_text() -> String:
 	return ["Entra en la estación","Despeja el vestíbulo","Recoge la batería de mantenimiento","Sobrevive en mantenimiento","Avanza por el andén","Despeja el paso al control","Instala la batería en el control","Defiende el control","Cruza la salida abierta","Estación completada"][clampi(stage,0,9)]
 
+func interaction_action() -> String:
+	if stage == 2 and player.position.distance_to(package_point) < 48: return "recoger batería"
+	if stage == 6 and player.position.distance_to(panel_position) < 48: return "instalar batería"
+	if stage == 8 and absf(player.position.x-delivery_x) < 55: return "cruzar salida"
+	return ""
+
 func interaction_hint() -> String:
-	if stage == 2 and player.position.distance_to(package_point) < 48: return "E / Enter · recoger batería"
-	if stage == 6 and player.position.distance_to(panel_position) < 48: return "E / Enter · instalar batería"
-	if stage == 8 and absf(player.position.x-delivery_x) < 55: return "E / Enter · cruzar salida"
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
 	if stage == 7: return "Aleja a los infectados del panel para reanudar el arranque"
 	if stage%2 == 1: return "Espacio / clic · disparar   R · recargar   Q · cuchillo"
-	return "Objetivo · %d m →" % int(absf(destination()-player.position.x)/METRE)
+	return tr("Objetivo · %d m →") % int(absf(destination()-player.position.x)/METRE)
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time > 0: return

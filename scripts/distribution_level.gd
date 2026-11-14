@@ -199,7 +199,7 @@ func start_wave(number: int) -> void:
 		5: queue_group(3,2,0)
 		6: queue_group(4,1,1)
 	audio.cue("wave",-15)
-	announcement.emit("ENCUENTRO %d / 6 · ATENCIÓN A LOS ACCESOS" % number)
+	announcement.emit(tr("ENCUENTRO %d / 6 · ATENCIÓN A LOS ACCESOS") % number)
 
 func queue_group(hollows: int, tough: int, dogs: int) -> void:
 	# Mark entry locations before spawning. Only _process advances these warnings.
@@ -253,7 +253,7 @@ func advance_encounter() -> void:
 	if not clear: return
 	set_stage(stage+1)
 	refresh_objects()
-	announcement.emit("PASO DESPEJADO · "+goal)
+	announcement.emit(tr("PASO DESPEJADO · ") + tr(goal))
 	if stage in SAFE_STAGES: checkpoint.emit(snapshot())
 
 func enemy_killed(_enemy: RouteEnemy) -> void:
@@ -265,16 +265,21 @@ func clamp_actor(pos: Vector2) -> Vector2:
 	var right := minf(world_length-30,arena_center+280) if fight else minf(world_length-30,destination()+90)
 	return Vector2(clampf(pos.x,left,right),clampf(pos.y,204,306))
 
-func interaction_hint() -> String:
-	if stage in FIGHT_STAGES: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
+func interaction_action() -> String:
 	if absf(player.position.x-destination())<65:
 		match stage:
-			2: return "E / Enter · recoger tarjeta"
-			5,8,11: return "E / Enter · leer documento"
-			12: return "E / Enter · llamar al Jefe"
-			13: return "E / Enter · copiar registros"
-			17: return "E / Enter · salir con las pruebas"
-	return "Objetivo · %d m →   Tab · documentos" % int(absf(destination()-player.position.x)/METRE)
+			2: return "recoger tarjeta"
+			5,8,11: return "leer documento"
+			12: return "llamar al Jefe"
+			13: return "copiar registros"
+			17: return "salir con las pruebas"
+	return ""
+
+func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
+	if stage in FIGHT_STAGES: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
+	return tr("Objetivo · %d m →   Tab · documentos") % int(absf(destination()-player.position.x)/METRE)
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time>0 or absf(player.position.x-destination())>=65: return

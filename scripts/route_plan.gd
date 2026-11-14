@@ -13,7 +13,7 @@ static func wave(number: int) -> Dictionary:
 static func objective(stage: int) -> String:
 	match stage:
 		0: return "Dirígete al Local 24"
-		1, 3, 5: return "Sobrevive · oleada %d / 3" % floori((stage + 1) / 2.0)
+		1, 3, 5: return TranslationServer.translate("Sobrevive · oleada %d / 3") % floori((stage + 1) / 2.0)
 		2: return "Avanza hasta el cruce"
 		4: return "Lleva el paquete al edificio de entrega"
 		6: return "Entrada desbloqueada · entrega el paquete"

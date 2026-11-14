@@ -1,5 +1,6 @@
 extends Node
 ## Application controller: screens, pauses and route lifetime.
+const Language := preload("res://scripts/language.gd")
 var ui: RouteUI
 var audio: RouteAudio
 var level: RouteLevel
@@ -11,6 +12,7 @@ var showing_harbor_breach := false
 var touch: Control
 
 func _ready() -> void:
+	Language.initialize()
 	if OS.has_feature("mobile") or "--responsive" in OS.get_cmdline_user_args():
 		get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 		get_window().content_scale_stretch = Window.CONTENT_SCALE_STRETCH_FRACTIONAL
@@ -42,6 +44,9 @@ func handle_command(action: String) -> void:
 		return
 	audio.cue("ui", -17)
 	match action:
+		"language":
+			Language.select("es" if TranslationServer.get_locale() == "en" else "en")
+			ui.menu(RouteSave.can_continue())
 		"new": start_intro()
 		"survival": start_survival()
 		"select_level": ui.route_select()

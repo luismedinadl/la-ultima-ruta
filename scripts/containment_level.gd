@@ -146,7 +146,7 @@ func start_wave(number: int) -> void:
 	if number in [1,2,4,5]:
 		spawn_enemy(Vector2(arena_center+250,290),false,true,false,true)
 		audio.cue("dog_growl",-12)
-	announcement.emit("EL HUECO · mantén la distancia" if number==5 else "ENCUENTRO %d / 5" % number)
+	announcement.emit("EL HUECO · mantén la distancia" if number==5 else tr("ENCUENTRO %d / 5") % number)
 	audio.cue("hollow" if number==5 else "wave",-14)
 	if not hollow_unlocked and count>=5: audio.cue("zombie",-16)
 
@@ -155,7 +155,7 @@ func enemy_killed(_enemy: RouteEnemy) -> void:
 	if stage%2==1 and stage<10 and remaining()==0:
 		stage += 1
 		goal = objective_text()
-		announcement.emit("PASO DESPEJADO · "+goal)
+		announcement.emit(tr("PASO DESPEJADO · ") + tr(goal))
 		checkpoint.emit(snapshot())
 
 func destination() -> float:
@@ -171,13 +171,19 @@ func nearby_document() -> int:
 		if player.position.distance_to(DOCUMENT_POINTS[i]) < 42: return i
 	return -1
 
+func interaction_action() -> String:
+	if stage >= 11: return ""
+	if nearby_document() >= 0: return "leer documento"
+	if stage == 8 and player.position.distance_to(GUN_POINT)<48: return "recoger escopeta"
+	if stage == 10 and absf(player.position.x-delivery_x)<55: return "abrir salida con la tarjeta"
+	return ""
+
 func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
 	if stage >= 11: return "Ruta completada"
-	if nearby_document() >= 0: return "E / Enter · leer documento"
-	if stage == 8 and player.position.distance_to(GUN_POINT)<48: return "E / Enter · recoger escopeta"
-	if stage == 10 and absf(player.position.x-delivery_x)<55: return "E / Enter · abrir salida con la tarjeta"
 	if stage%2==1: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
-	return "Objetivo · %d m →" % int(absf(destination()-player.position.x)/METRE)
+	return tr("Objetivo · %d m →") % int(absf(destination()-player.position.x)/METRE)
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time>0: return

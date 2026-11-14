@@ -1,0 +1,1678 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "¡CARGA! · Apártate"
+msgstr "CHARGE! · Dodge sideways"
+
+msgid "¡BARRIDO! · Aléjate"
+msgstr "SWEEP! · Get clear"
+
+msgid "¡GOLPE! · Retrocede"
+msgstr "SLAM! · Step back"
+
+msgid "ARMAZÓN EXPUESTO"
+msgstr "EXPOSED FRAME"
+
+msgid "¡SE ROMPEN LAS SUJECIONES!"
+msgstr "THE RESTRAINTS ARE BREAKING!"
+
+msgid "ESTACIÓN DE RADIO"
+msgstr "RADIO STATION"
+
+msgid "ENERGÍA"
+msgstr "POWER"
+
+msgid "ANTENA"
+msgstr "ANTENNA"
+
+msgid "SALA DE EMISIÓN"
+msgstr "BROADCAST ROOM"
+
+msgid "SALIDA DE SERVICIO"
+msgstr "SERVICE EXIT"
+
+msgid "PUERTO →"
+msgstr "HARBOR →"
+
+msgid "ALIMENTACIÓN DE EMERGENCIA"
+msgstr "EMERGENCY POWER"
+
+msgid "PATIO DE LA ANTENA"
+msgstr "ANTENNA YARD"
+
+msgid "PASILLO DE SERVICIO"
+msgstr "SERVICE CORRIDOR"
+
+msgid "SALIDA HACIA EL PUERTO"
+msgstr "HARBOR EXIT"
+
+msgid "Entra en la estación"
+msgstr "Enter the station"
+
+msgid "Despeja la entrada"
+msgstr "Clear the entrance"
+
+msgid "Comprueba la entrada"
+msgstr "Check the entrance"
+
+msgid "Activa la alimentación de emergencia"
+msgstr "Switch on emergency power"
+
+msgid "Elimina a los infectados"
+msgstr "Eliminate the infected"
+
+msgid "Comprueba la conexión"
+msgstr "Check the connection"
+
+msgid "Llega al patio de la antena"
+msgstr "Reach the antenna yard"
+
+msgid "Despeja el patio"
+msgstr "Clear the yard"
+
+msgid "Conecta la antena"
+msgstr "Connect the antenna"
+
+msgid "Envía los archivos desde emisión"
+msgstr "Send the files from the broadcast room"
+
+msgid "Busca la salida de servicio"
+msgstr "Find the service exit"
+
+msgid "Abre camino hasta la salida"
+msgstr "Fight your way to the exit"
+
+msgid "Escucha las indicaciones por radio"
+msgstr "Listen to the radio instructions"
+
+msgid "Cruza el patio de salida"
+msgstr "Cross the exit yard"
+
+msgid "Despeja la salida al puerto"
+msgstr "Clear the harbor exit"
+
+msgid "Sal de la estación"
+msgstr "Leave the station"
+
+msgid "Rescate contactado"
+msgstr "Rescue team contacted"
+
+msgid "ENCUENTRO %d / 5 · ATENCIÓN A LOS ACCESOS"
+msgstr "ENCOUNTER %d / 5 · WATCH THE ENTRANCES"
+
+msgid "OTRO GRUPO SE ACERCA · CUIDADO CON LOS ACCESOS"
+msgstr "ANOTHER GROUP IS COMING · WATCH THE ENTRANCES"
+
+msgid "PASO DESPEJADO · "
+msgstr "PATH CLEAR · "
+
+msgid "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
+msgstr "Space / click · attack   R · reload   Q · switch weapon"
+
+msgid "Acércate al marcador para interactuar"
+msgstr "Move closer to the marker to interact"
+
+msgid "E / Enter · "
+msgstr "E / Enter · "
+
+msgid "comprobar entrada"
+msgstr "check entrance"
+
+msgid "activar energía"
+msgstr "turn on power"
+
+msgid "comprobar conexión"
+msgstr "check connection"
+
+msgid "conectar antena"
+msgstr "connect antenna"
+
+msgid "enviar a la central"
+msgstr "send to dispatch"
+
+msgid "escuchar la radio"
+msgstr "listen to the radio"
+
+msgid "salir de la estación"
+msgstr "leave the station"
+
+msgid "Objetivo · %d m →   Tab · instrucciones"
+msgstr "Objective · %d m →   Tab · instructions"
+
+msgid "Despeja la zona para consultar las instrucciones"
+msgstr "Clear the area to read the instructions"
+
+msgid "Las instrucciones están junto al cuadro eléctrico"
+msgstr "The instructions are next to the fuse box"
+
+msgid "CONFIRMACIÓN DE ENVÍO"
+msgstr "TRANSFER CONFIRMATION"
+
+msgid "Archivos recibidos.\n\nCopia guardada en la central regional de emergencias."
+msgstr "Files received.\n\nCopy saved at the regional emergency center."
+
+msgid "ENVÍO INTERRUMPIDO\nLleva la memoria al rescate"
+msgstr "TRANSFER INTERRUPTED\nTake the drive to the rescue team"
+
+msgid "Conexión con la central disponible"
+msgstr "Dispatch connection available"
+
+msgid "Antena desconectada"
+msgstr "Antenna disconnected"
+
+msgid "Equipo apagado"
+msgstr "Equipment offline"
+
+msgid "+4 CARTUCHOS DE ESCOPETA"
+msgstr "+4 SHOTGUN SHELLS"
+
+msgid "JEFE"
+msgstr "BOSS"
+
+msgid "Ve a recepción y espera allí. No entres en las zonas del personal."
+msgstr "Go to reception and wait there. Stay out of the staff areas."
+
+msgid "NICO"
+msgstr "NICO"
+
+msgid "No hay nadie. Solo veo cajas y jaulas. Dijiste que aquí evacuaban gente."
+msgstr "There's nobody here. All I see are boxes and cages. You said people were being evacuated here."
+
+msgid "Debería haber personal en recepción. Quédate ahí. Voy a consultar qué pasó."
+msgstr "There should be someone at reception. Stay there. I'll find out what happened."
+
+msgid "Hay infectados entrando por donde vine. No puedo quedarme aquí."
+msgstr "The infected are coming in the way I came. I can't stay here."
+
+msgid "Veo un letrero de salida de emergencia. Voy a buscar cómo abrirla."
+msgstr "I see an emergency exit sign. I'll find a way to open it."
+
+msgid "¿Qué llevaban los paquetes que entregué?"
+msgstr "What was in the packages I delivered?"
+
+msgid "Aparatos electrónicos de la empresa. Tú espera en recepción."
+msgstr "Company electronics. Just wait at reception."
+
+msgid "Nico, espera mis instrucciones."
+msgstr "Nico, wait for my instructions."
+
+msgid "Ya esperé bastante. Voy a buscar otra salida."
+msgstr "I've waited long enough. I'll find another way out."
+
+msgid "REGISTRO DE TRASLADO · 04:18"
+msgstr "TRANSFER LOG · 04:18"
+
+msgid "No permitan que los inspectores sanitarios abran los paquetes de la ruta este.\n\nSi algo se mueve dentro de una caja al escuchar ruido, detengan el traslado y avisen al supervisor.\n\nNo informen al repartidor ni escriban lo ocurrido en su registro de entrega."
+msgstr "Do not allow health inspectors to open packages on the east route.\n\nIf anything inside a crate moves in response to noise, stop the transfer and notify the supervisor.\n\nDo not tell the courier or mention the incident in the delivery log."
+
+msgid "ORDEN DE EVACUACIÓN · ANEXO C"
+msgstr "EVACUATION ORDER · ANNEX C"
+
+msgid "Se cancela la evacuación de los civiles. Los vehículos solo llevarán las muestras y a los responsables del proyecto.\n\nDigan a los repartidores que todavía hay lugares para ellos, aunque no sea cierto, para que completen las entregas.\n\nMantengan cerradas las jaulas. Los infectados que están dentro son peligrosos."
+msgstr "Civilian evacuation is canceled. Vehicles will carry only samples and project leads.\n\nTell the couriers there are still seats for them, even though there are none, so they finish their deliveries.\n\nKeep the cages closed. The infected inside are dangerous."
+
+msgid "PASO DE SERVICIO"
+msgstr "SERVICE PASSAGE"
+
+msgid "PATIO DE CARGA"
+msgstr "LOADING YARD"
+
+msgid "EL HUECO · mantén la distancia"
+msgstr "HOLLOW · keep your distance"
+
+msgid "ENCUENTRO %d / 5"
+msgstr "ENCOUNTER %d / 5"
+
+msgid "Alcanza el puesto de contención"
+msgstr "Reach the containment checkpoint"
+
+msgid "Despeja el control sanitario"
+msgstr "Clear the health checkpoint"
+
+msgid "Cruza el centro de clasificación"
+msgstr "Cross the sorting center"
+
+msgid "Lee el registro del supervisor"
+msgstr "Read the supervisor's log"
+
+msgid "Sobrevive al cierre del centro"
+msgstr "Survive the lockdown"
+
+msgid "Avanza al depósito de jaulas"
+msgstr "Reach the cage depot"
+
+msgid "Despeja el último depósito"
+msgstr "Clear the last depot"
+
+msgid "Busca equipo en la salida de emergencia"
+msgstr "Look for gear by the emergency exit"
+
+msgid "Sobrevive a los Huecos"
+msgstr "Survive the Hollows"
+
+msgid "Cruza la salida de emergencia"
+msgstr "Go through the emergency exit"
+
+msgid "Pruebas recuperadas"
+msgstr "Evidence recovered"
+
+msgid "Ruta completada"
+msgstr "Route complete"
+
+msgid "E / Enter · leer documento"
+msgstr "E / Enter · read document"
+
+msgid "E / Enter · recoger escopeta"
+msgstr "E / Enter · pick up shotgun"
+
+msgid "E / Enter · abrir salida con la tarjeta"
+msgstr "E / Enter · unlock exit with keycard"
+
+msgid "Objetivo · %d m →"
+msgstr "Objective · %d m →"
+
+msgid "¿Qué rayos son esas cosas? ¡Ya no parecen humanas!"
+msgstr "What the hell are those things? They barely look human anymore!"
+
+msgid "TARJETA DEL SUPERVISOR RECUPERADA"
+msgstr "SUPERVISOR KEYCARD RECOVERED"
+
+msgid "CARTUCHOS DE ESCOPETA"
+msgstr "SHOTGUN SHELLS"
+
+msgid "RECEPCIÓN"
+msgstr "RECEPTION"
+
+msgid "ALMACÉN"
+msgstr "WAREHOUSE"
+
+msgid "CONSERVACIÓN"
+msgstr "COLD STORAGE"
+
+msgid "ARCHIVOS"
+msgstr "RECORDS"
+
+msgid "CONTROL"
+msgstr "CONTROL"
+
+msgid "SALIDA"
+msgstr "EXIT"
+
+msgid "MUELLE DE RECEPCIÓN"
+msgstr "RECEIVING DOCK"
+
+msgid "ALMACÉN DE CLASIFICACIÓN"
+msgstr "SORTING WAREHOUSE"
+
+msgid "CÁMARAS DE CONSERVACIÓN"
+msgstr "COLD STORAGE ROOMS"
+
+msgid "ARCHIVO DE ENVÍOS"
+msgstr "SHIPPING ARCHIVES"
+
+msgid "CONTROL DE DESPACHOS"
+msgstr "DISPATCH CONTROL"
+
+msgid "PATIO DE SALIDA"
+msgstr "EXIT YARD"
+
+msgid "Llega al muelle de recepción"
+msgstr "Reach the receiving dock"
+
+msgid "Despeja la caseta"
+msgstr "Clear the booth"
+
+msgid "Recoge la tarjeta de acceso"
+msgstr "Pick up the access card"
+
+msgid "Entra al almacén"
+msgstr "Enter the warehouse"
+
+msgid "Elimina a los vigilantes; evita el ruido"
+msgstr "Eliminate the lookouts quietly"
+
+msgid "Lee el registro de entregas"
+msgstr "Read the delivery log"
+
+msgid "Entra en conservación"
+msgstr "Enter cold storage"
+
+msgid "Despeja las cámaras"
+msgstr "Clear the cold rooms"
+
+msgid "Lee el informe de Continuidad"
+msgstr "Read the Continuity report"
+
+msgid "Busca la oficina de archivos"
+msgstr "Find the records office"
+
+msgid "Despeja la entrada de archivos"
+msgstr "Clear the records office entrance"
+
+msgid "Lee la orden de traslado"
+msgstr "Read the transfer order"
+
+msgid "Llama al Jefe desde el teléfono"
+msgstr "Call the Boss from the phone"
+
+msgid "Copia los registros en el control"
+msgstr "Copy the records at dispatch control"
+
+msgid "Sal del control: elimina a los infectados"
+msgstr "Fight your way out of dispatch control"
+
+msgid "Despeja la salida"
+msgstr "Clear the exit"
+
+msgid "Sal con las pruebas"
+msgstr "Leave with the evidence"
+
+msgid "Registros recuperados"
+msgstr "Records recovered"
+
+msgid "ENCUENTRO %d / 6 · ATENCIÓN A LOS ACCESOS"
+msgstr "ENCOUNTER %d / 6 · WATCH THE ENTRANCES"
+
+msgid "SE ABRE UN ACCESO · LLEGAN MÁS INFECTADOS"
+msgstr "AN ENTRANCE IS OPEN · MORE INFECTED INCOMING"
+
+msgid "MÁS INFECTADOS EN LA ENTRADA DE ARCHIVOS"
+msgstr "MORE INFECTED AT THE RECORDS OFFICE"
+
+msgid "OTRO GRUPO LLEGA AL CONTROL"
+msgstr "ANOTHER GROUP IS APPROACHING DISPATCH"
+
+msgid "E / Enter · recoger tarjeta"
+msgstr "E / Enter · pick up keycard"
+
+msgid "E / Enter · llamar al Jefe"
+msgstr "E / Enter · call the Boss"
+
+msgid "E / Enter · copiar registros"
+msgstr "E / Enter · copy records"
+
+msgid "E / Enter · salir con las pruebas"
+msgstr "E / Enter · leave with the evidence"
+
+msgid "Objetivo · %d m →   Tab · documentos"
+msgstr "Objective · %d m →   Tab · documents"
+
+msgid "Despeja la zona para consultar los documentos"
+msgstr "Clear the area to read the documents"
+
+msgid "Todavía no has recogido documentos"
+msgstr "You haven't collected any documents yet"
+
+msgid "VÉRTICE · CARGA"
+msgstr "VÉRTICE · FREIGHT"
+
+msgid "TERMINAL DE PASAJEROS →"
+msgstr "PASSENGER TERMINAL →"
+
+msgid "BARCO DE RESCATE"
+msgstr "RESCUE BOAT"
+
+msgid "Llega al puerto"
+msgstr "Reach the harbor"
+
+msgid "Despeja el acceso"
+msgstr "Clear the entrance area"
+
+msgid "Cruza el patio de carga"
+msgstr "Cross the loading yard"
+
+msgid "Lee la orden de embarque"
+msgstr "Read the boarding order"
+
+msgid "Habla con el Jefe"
+msgstr "Talk to the Boss"
+
+msgid "Despeja el control de la reja"
+msgstr "Clear the gate controls"
+
+msgid "Dispara al interruptor de la reja"
+msgstr "Shoot the gate switch"
+
+msgid "Llega al paso protegido"
+msgstr "Reach the protected passage"
+
+msgid "Protege el cruce de los civiles"
+msgstr "Cover the civilians as they cross"
+
+msgid "Acompaña al grupo hasta el muelle"
+msgstr "Escort the group to the dock"
+
+msgid "El Jefe bloquea el paso"
+msgstr "The Boss is blocking the way"
+
+msgid "Protege la huida del grupo"
+msgstr "Cover the group's escape"
+
+msgid "Derrota al Anclado"
+msgstr "Defeat the Anchored One"
+
+msgid "Reúnete con Mara y embarca"
+msgstr "Meet Mara and board the boat"
+
+msgid "La última ruta terminó"
+msgstr "The last route is over"
+
+msgid "ENCUENTRO %d / 4"
+msgstr "ENCOUNTER %d / 4"
+
+msgid "MÁS INFECTADOS POR LOS ACCESOS"
+msgstr "MORE INFECTED AT THE ENTRANCES"
+
+msgid "Espera a Mara y al grupo"
+msgstr "Wait for Mara and the others"
+
+msgid "Dispara al interruptor rojo del lado de carga"
+msgstr "Shoot the red switch on the freight side"
+
+msgid "leer orden"
+msgstr "read order"
+
+msgid "hablar con el Jefe"
+msgstr "talk to the Boss"
+
+msgid "abrir reja"
+msgstr "open gate"
+
+msgid "Espera a que todos lleguen al barco"
+msgstr "Wait for everyone to reach the boat"
+
+msgid "Despeja la zona antes de leer"
+msgstr "Clear the area before reading"
+
+msgid "La orden de embarque está en el patio de carga"
+msgstr "The boarding order is in the loading yard"
+
+msgid "EL ANCLADO · Esquiva y ataca durante su recuperación"
+msgstr "THE ANCHORED ONE · Dodge, then strike while it recovers"
+
+msgid "EL CAMINO ESTÁ LIBRE · MARA TE ESPERA"
+msgstr "THE WAY IS CLEAR · MARA IS WAITING"
+
+msgid "Interruptor destruido · Abriendo reja"
+msgstr "Switch destroyed · Opening gate"
+
+msgid "Saltar intro · Esc"
+msgstr "Skip intro · Esc"
+
+msgid "Saltar escena"
+msgstr "Skip scene"
+
+msgid "Continuar"
+msgstr "Continue"
+
+msgid "Continuar · E / Enter"
+msgstr "Continue · E / Enter"
+
+msgid "MAMÁ"
+msgstr "MOM"
+
+msgid "\n\n1 mensaje\nnuevo"
+msgstr "\n\n1 new\nmessage"
+
+msgid "Dirígete al Local 24"
+msgstr "Head to Shop 24"
+
+msgid "01  /  COMERCIO EN SILENCIO"
+msgstr "01  /  SILENT STOREFRONTS"
+
+msgid "02  /  EL CRUCE"
+msgstr "02  /  THE CROSSING"
+
+msgid "03  /  ÚLTIMA ENTREGA"
+msgstr "03  /  LAST DELIVERY"
+
+msgid "DISTRITO DE CARGA"
+msgstr "FREIGHT DISTRICT"
+
+msgid "PASO FERROVIARIO"
+msgstr "RAIL CROSSING"
+
+msgid "PUESTO DE EVACUACIÓN"
+msgstr "EVACUATION POINT"
+
+msgid "OLEADA %d  /  %d INFECTADOS"
+msgstr "WAVE %d  /  %d INFECTED"
+
+msgid "RUTA DESPEJADA  /  "
+msgstr "ROUTE CLEAR  /  "
+
+msgid "ENTRADA ABIERTA"
+msgstr "ENTRANCE OPEN"
+
+msgid "PUNTO SEGURO"
+msgstr "CHECKPOINT"
+
+msgid "Espacio / clic · disparar   R · recargar   Q · arma"
+msgstr "Space / click · fire   R · reload   Q · switch weapon"
+
+msgid "Espacio · cuchillo    |    Muévete para esquivar"
+msgstr "Space · knife    |    Move to dodge"
+
+msgid "E / Enter · recoger paquete"
+msgstr "E / Enter · pick up package"
+
+msgid "E / Enter · entregar paquete"
+msgstr "E / Enter · deliver package"
+
+msgid "Botiquín (+35) · recogida automática"
+msgstr "Medkit (+35) · automatic pickup"
+
+msgid "Salud completa"
+msgstr "Full health"
+
+msgid "←  Objetivo · %d m"
+msgstr "←  Objective · %d m"
+
+msgid "Objetivo · %d m  →"
+msgstr "Objective · %d m  →"
+
+msgid "Recoge el paquete marcado"
+msgstr "Pick up the marked package"
+
+msgid "Sobrevive · oleada %d / 5"
+msgstr "Survive · wave %d / 5"
+
+msgid "Entrega en el puesto de evacuación"
+msgstr "Deliver the package to the evacuation point"
+
+msgid "Entrega completada"
+msgstr "Delivery complete"
+
+msgid "Avanza al almacén"
+msgstr "Head to the warehouse"
+
+msgid "Cruza el paso ferroviario"
+msgstr "Cross the railway"
+
+msgid "Llega al control de carga"
+msgstr "Reach the freight checkpoint"
+
+msgid "Alcanza la evacuación"
+msgstr "Reach the evacuation point"
+
+msgid "+%d MUNICIÓN"
+msgstr "+%d AMMO"
+
+msgid "PUNTO SEGURO RECUPERADO"
+msgstr "CHECKPOINT RESTORED"
+
+msgid "Nico, toma la ruta del este. El Local 24 tiene un paquete que debes entregar."
+msgstr "Nico, take the east route. Shop 24 has a package for you to deliver."
+
+msgid "No lo sé. Hay personas moviéndose raro, cubiertas de sangre. Parecen... zombis."
+msgstr "I don't know. People are moving strangely, covered in blood. They look like... zombies."
+
+msgid "Que no te atormenten. Recoge el paquete. Si cumples la entrega, tu pago se duplica."
+msgstr "Don't let them get to you. Pick up the package. Finish the delivery and I'll double your pay."
+
+msgid "¿Pago doble? Eso me agrada. Lo haré solo porque realmente necesito el dinero."
+msgstr "Double pay? I could use that. I'm only doing this because I really need the money."
+
+msgid "02  /  DISTRITO DE CARGA"
+msgstr "02  /  FREIGHT DISTRICT"
+
+msgid "03 / BAJO LA CIUDAD"
+msgstr "03 / BENEATH THE CITY"
+
+msgid "04 / ZONA DE CONTENCIÓN"
+msgstr "04 / CONTAINMENT ZONE"
+
+msgid "05 / LOS QUE QUEDARON"
+msgstr "05 / THOSE LEFT BEHIND"
+
+msgid "06 / EL REGISTRO DE LAS ENTREGAS"
+msgstr "06 / THE DELIVERY RECORDS"
+
+msgid "08 / LA ÚLTIMA RUTA"
+msgstr "08 / THE LAST ROUTE"
+
+msgid "07 / QUE SE SEPA"
+msgstr "07 / GET THE WORD OUT"
+
+msgid "No se pudo guardar el punto seguro"
+msgstr "Couldn't save the checkpoint"
+
+msgid "Saltar escena · Esc"
+msgstr "Skip scene · Esc"
+
+msgid "No se pudo guardar el nivel completado"
+msgstr "Couldn't save level completion"
+
+msgid "No se pudo guardar el final de la historia"
+msgstr "Couldn't save the story ending"
+
+msgid "Entrega confirmada. Buen trabajo, Nico."
+msgstr "Delivery confirmed. Good work, Nico."
+
+msgid "No sé cuánto tiempo más podré seguir haciendo esto."
+msgstr "I don't know how much longer I can keep doing this."
+
+msgid "Instrucciones · Tab"
+msgstr "Instructions · Tab"
+
+msgid "Documentos · Tab"
+msgstr "Documents · Tab"
+
+msgid "Saltar final · Esc"
+msgstr "Skip ending · Esc"
+
+msgid "Si te ven, te persiguen. Disparar atrae a los cercanos."
+msgstr "If they see you, they'll give chase. Gunfire draws nearby enemies."
+
+msgid "Defiende el control · %d%% · %s"
+msgstr "Defend the panel · %d%% · %s"
+
+msgid "INTERRUMPIDO"
+msgstr "INTERRUPTED"
+
+msgid "PERRO INFECTADO · esquiva su mordida"
+msgstr "INFECTED DOG · dodge its bite"
+
+msgid "CONTROL · refuerzos %d / 3"
+msgstr "CONTROL PANEL · reinforcements %d / 3"
+
+msgid "SALIDA ABIERTA"
+msgstr "EXIT OPEN"
+
+msgid "Despeja el vestíbulo"
+msgstr "Clear the lobby"
+
+msgid "Recoge la batería de mantenimiento"
+msgstr "Pick up the maintenance battery"
+
+msgid "Sobrevive en mantenimiento"
+msgstr "Survive in maintenance"
+
+msgid "Avanza por el andén"
+msgstr "Head along the platform"
+
+msgid "Despeja el paso al control"
+msgstr "Clear the way to the control panel"
+
+msgid "Instala la batería en el control"
+msgstr "Install the battery in the panel"
+
+msgid "Defiende el control"
+msgstr "Defend the control panel"
+
+msgid "Cruza la salida abierta"
+msgstr "Go through the open exit"
+
+msgid "Estación completada"
+msgstr "Station complete"
+
+msgid "E / Enter · recoger batería"
+msgstr "E / Enter · pick up battery"
+
+msgid "E / Enter · instalar batería"
+msgstr "E / Enter · install battery"
+
+msgid "E / Enter · cruzar salida"
+msgstr "E / Enter · go through exit"
+
+msgid "Aleja a los infectados del panel para reanudar el arranque"
+msgstr "Draw the infected away from the panel to restart the system"
+
+msgid "Espacio / clic · disparar   R · recargar   Q · cuchillo"
+msgstr "Space / click · fire   R · reload   Q · knife"
+
+msgid "LLEGAN MÁS INFECTADOS · 4"
+msgstr "MORE INFECTED INCOMING · 4"
+
+msgid "Abriendo compuerta · %d%% · despeja la zona"
+msgstr "Opening gate · %d%% · clear the area"
+
+msgid "OLEADA 5 / 6 · SIGUE PROTEGIENDO AL GRUPO"
+msgstr "WAVE 5 / 6 · KEEP PROTECTING THE GROUP"
+
+msgid "OLEADA 6 / 6 · PROTEGE LA SALIDA"
+msgstr "WAVE 6 / 6 · PROTECT THE EXIT"
+
+msgid "Protege al grupo · %d%%"
+msgstr "Protect the group · %d%%"
+
+msgid "LOS TRES SUPERVIVIENTES ESTÁN A SALVO"
+msgstr "ALL THREE SURVIVORS ARE SAFE"
+
+msgid "OLEADA %d / 6"
+msgstr "WAVE %d / 6"
+
+msgid "Llega al taller"
+msgstr "Reach the workshop"
+
+msgid "Despeja la entrada del taller"
+msgstr "Clear the workshop entrance"
+
+msgid "Habla con Mara"
+msgstr "Talk to Mara"
+
+msgid "Llega a la estación de bombas"
+msgstr "Reach the pump station"
+
+msgid "Despeja el acceso al control"
+msgstr "Clear the way to the controls"
+
+msgid "Enciende el generador"
+msgstr "Start the generator"
+
+msgid "Escucha a Mara"
+msgstr "Listen to Mara"
+
+msgid "Sobrevive mientras se abre la compuerta"
+msgstr "Survive until the gate opens"
+
+msgid "Llega al paso del canal"
+msgstr "Reach the canal crossing"
+
+msgid "Avisa a Mara"
+msgstr "Signal Mara"
+
+msgid "Protege el paso"
+msgstr "Protect the crossing"
+
+msgid "Reúnete con Mara"
+msgstr "Meet Mara"
+
+msgid "Supervivientes a salvo"
+msgstr "Survivors safe"
+
+msgid "E / Enter · hablar con Mara"
+msgstr "E / Enter · talk to Mara"
+
+msgid "E / Enter · encender el generador"
+msgstr "E / Enter · start the generator"
+
+msgid "E / Enter · avisar a Mara"
+msgstr "E / Enter · signal Mara"
+
+msgid "Sobrevive · oleada %d / 3"
+msgstr "Survive · wave %d / 3"
+
+msgid "Avanza hasta el cruce"
+msgstr "Head to the crossing"
+
+msgid "Lleva el paquete al edificio de entrega"
+msgstr "Take the package to the delivery building"
+
+msgid "Entrada desbloqueada · entrega el paquete"
+msgstr "Entrance unlocked · deliver the package"
+
+msgid "Distrito comercial"
+msgstr "Shopping district"
+
+msgid "Distrito de carga"
+msgstr "Freight district"
+
+msgid "Metro"
+msgstr "Subway"
+
+msgid "Campamento"
+msgstr "Camp"
+
+msgid "Canal"
+msgstr "Canal"
+
+msgid "Centro de distribución"
+msgstr "Distribution center"
+
+msgid "Estación de radio"
+msgstr "Radio station"
+
+msgid "Puerto"
+msgstr "Harbor"
+
+msgid "%s · OLEADA %d%s"
+msgstr "%s · WAVE %d%s"
+
+msgid " · EL ANCLADO"
+msgstr " · THE ANCHORED ONE"
+
+msgid "Oleada %d · %s"
+msgstr "Wave %d · %s"
+
+msgid "El Anclado"
+msgstr "The Anchored One"
+
+msgid "Oleada %d en %d s · Recoge suministros"
+msgstr "Wave %d in %d s · Collect supplies"
+
+msgid "Avanzando al siguiente escenario"
+msgstr "Moving to the next area"
+
+msgid "Nueva historia"
+msgstr "New story"
+
+msgid "Continuar historia"
+msgstr "Continue story"
+
+msgid "Empieza una nueva historia para guardar tu progreso."
+msgstr "Start a new story to save your progress."
+
+msgid "Continúa desde el último punto seguro."
+msgstr "Resume from your last checkpoint."
+
+msgid "Seleccionar nivel"
+msgstr "Level select"
+
+msgid "Completa la campaña para desbloquearlo."
+msgstr "Complete the story to unlock this mode."
+
+msgid "Vuelve a jugar cualquier nivel."
+msgstr "Replay any level."
+
+msgid "Supervivencia"
+msgstr "Survival"
+
+msgid "Sobrevive a oleadas sin límite."
+msgstr "Survive endless waves."
+
+msgid "Salir"
+msgstr "Quit"
+
+msgid "Entendido"
+msgstr "Got it"
+
+msgid "E / Enter  ·  continuar"
+msgstr "E / Enter  ·  continue"
+
+msgid "E / Enter · continuar"
+msgstr "E / Enter · continue"
+
+msgid "E / Enter · cerrar documento"
+msgstr "E / Enter · close document"
+
+msgid "Toca para continuar"
+msgstr "Tap to continue"
+
+msgid "Toca para cerrar"
+msgstr "Tap to close"
+
+msgid " infectados  ·  "
+msgstr " infected  ·  "
+
+msgid "Toca la mano · "
+msgstr "Tap the hand · "
+
+msgid "   Tab · documentos"
+msgstr "   Tab · documents"
+
+msgid "   Tab · instrucciones"
+msgstr "   Tab · instructions"
+
+msgid "Espacio"
+msgstr "Space"
+
+msgid "Mantén pulsado para atacar"
+msgstr "Hold to attack"
+
+msgid "RUTA EN PAUSA"
+msgstr "ROUTE PAUSED"
+
+msgid "Reanudar"
+msgstr "Resume"
+
+msgid "Controles"
+msgstr "Controls"
+
+msgid "Menú principal"
+msgstr "Main menu"
+
+msgid "CONTROLES"
+msgstr "CONTROLS"
+
+msgid "Joystick: moverte. Arma: mantén para atacar.\nCargador: recargar. Flechas: cambiar arma.\nMano: interactuar con objetos cercanos.\nToca los diálogos para leer y continuar.\n\nLas armas ayudan a apuntar a enemigos cercanos.\nMunición y botiquines se recogen al pasar."
+msgstr "Stick: move. Hold the weapon button to attack.\nMagazine: reload. Arrows: switch weapons.\nHand: interact with nearby objects.\nTap dialogue to read and continue.\n\nWeapons help you aim at nearby enemies.\nWalk over ammo and medkits to collect them."
+
+msgid "WASD / flechas      Moverse\nEspacio / clic             Atacar / disparar\nE / Enter                   Interactuar / diálogo\nR: recargar    Q: cambiar arma    Esc: pausa\n\nClic apunta al cursor; Espacio ayuda a apuntar.\nRecoge munición pasando sobre las cajas."
+msgstr "WASD / arrows         Move\nSpace / click              Attack / fire\nE / Enter                   Interact / dialogue\nR: reload    Q: switch weapon    Esc: pause\n\nClick to aim at the cursor. Space assists your aim.\nWalk over crates to collect ammo."
+
+msgid "Volver"
+msgstr "Back"
+
+msgid "FIN DE SUPERVIVENCIA"
+msgstr "SURVIVAL OVER"
+
+msgid "Oleadas superadas     %d\nEnemigos eliminados   %d\nTiempo sobrevivido     %02d:%02d"
+msgstr "Waves cleared          %d\nEnemies defeated     %d\nTime survived           %02d:%02d"
+
+msgid "Reintentar"
+msgstr "Retry"
+
+msgid "A SALVO"
+msgstr "SAFE AT LAST"
+
+msgid "PRUEBAS ENVIADAS"
+msgstr "EVIDENCE SENT"
+
+msgid "REGISTROS RECUPERADOS"
+msgstr "RECORDS RECOVERED"
+
+msgid "RESCATE COMPLETADO"
+msgstr "RESCUE COMPLETE"
+
+msgid "PRUEBAS RECUPERADAS"
+msgstr "EVIDENCE RECOVERED"
+
+msgid "ESTACIÓN COMPLETADA"
+msgstr "STATION COMPLETE"
+
+msgid "ENTREGA COMPLETADA"
+msgstr "DELIVERY COMPLETE"
+
+msgid "LA RUTA TERMINÓ"
+msgstr "THE ROUTE IS OVER"
+
+msgid "NIVEL %02d  /  INFORME DE RUTA"
+msgstr "LEVEL %02d  /  ROUTE REPORT"
+
+msgid "Zombis eliminados     %d\nDaño recibido             %d\nTiempo de ruta            %02d:%02d"
+msgstr "Zombies defeated     %d\nDamage taken           %d\nRoute time                 %02d:%02d"
+
+msgid "Reanudar desde el punto seguro"
+msgstr "Resume from checkpoint"
+
+msgid "Continuar al Nivel %d"
+msgstr "Continue to Level %d"
+
+msgid "ELIGE LA RUTA"
+msgstr "CHOOSE YOUR ROUTE"
+
+msgid "Bajo la ciudad"
+msgstr "Beneath the city"
+
+msgid "Zona de contención"
+msgstr "Containment zone"
+
+msgid "Los que quedaron"
+msgstr "Those left behind"
+
+msgid "El registro de las entregas"
+msgstr "The delivery records"
+
+msgid "Que se sepa"
+msgstr "Get the word out"
+
+msgid "La última ruta"
+msgstr "The last route"
+
+msgid "Nivel %d · %s"
+msgstr "Level %d · %s"
+
+msgid "RECARGANDO"
+msgstr "RELOADING"
+
+msgid "CUCHILLO"
+msgstr "KNIFE"
+
+msgid "CUCHILLO · Q"
+msgstr "KNIFE · Q"
+
+msgid "MARA"
+msgstr "MARA"
+
+msgid "La estación está delante. Desde ahí podemos enviar los archivos a la central de emergencias."
+msgstr "The station is up ahead. We can send the files to emergency dispatch from there."
+
+msgid "¿Esa central está fuera de la ciudad?"
+msgstr "Is dispatch outside the city?"
+
+msgid "Sí. Usábamos esa red en las ambulancias. Yo me quedo con los demás."
+msgstr "Yes. We used that network in the ambulances. I'll stay with the others."
+
+msgid "Voy a entrar."
+msgstr "I'm going in."
+
+msgid "Solo funcionan las luces de emergencia. Los equipos están apagados."
+msgstr "Only the emergency lights are on. The equipment's dead."
+
+msgid "Busca el cuadro eléctrico. Debe tener un interruptor para la alimentación de emergencia."
+msgstr "Find the fuse box. There should be an emergency power switch."
+
+msgid "Los equipos ya tienen corriente. La pantalla dice que la antena está desconectada."
+msgstr "The equipment has power. The screen says the antenna is disconnected."
+
+msgid "Busca el armario que está al pie de la antena. El interruptor de conexión estará ahí."
+msgstr "Look for a cabinet at the foot of the antenna. The connection switch should be inside."
+
+msgid "La luz de conexión está encendida."
+msgstr "The connection light is on."
+
+msgid "Vuelve al interior por la puerta de la derecha. La sala de emisión está al fondo."
+msgstr "Head back inside through the door on the right. The broadcast room is at the far end."
+
+msgid "¿Me escucha alguien? Estoy en la estación de la ciudad."
+msgstr "Can anyone hear me? I'm at the city radio station."
+
+msgid "OPERADORA"
+msgstr "DISPATCHER"
+
+msgid "Central regional de emergencias. Te escucho. ¿Necesitas ayuda?"
+msgstr "Regional emergency dispatch. I hear you. Do you need help?"
+
+msgid "Tengo archivos de Vértice. Demuestran que siguieron enviando material infectado."
+msgstr "I have files from Vértice. They prove the company kept shipping infected material."
+
+msgid "Conecta la memoria al ordenador. Selecciona Enviar a la central."
+msgstr "Plug the drive into the computer. Select Send to Dispatch."
+
+msgid "Intenté enviarlos, pero la transferencia se cortó. ¿Te llegó algo?"
+msgstr "I tried sending them, but the transfer cut out. Did anything come through?"
+
+msgid "Recibimos tu llamada, pero los archivos no llegaron. Lleva la memoria y los documentos al equipo de rescate."
+msgstr "We got your call, but the files didn't come through. Take the drive and the documents to the rescue team."
+
+msgid "Los tengo conmigo. Ahí están las órdenes de Vértice y los registros de las entregas."
+msgstr "I've got them with me. The Vértice orders and the delivery records are all here."
+
+msgid "No los pierdas. Cuando estén a salvo, podremos revisarlos. Dime cuántas personas necesitan salir."
+msgstr "Keep them safe. We can review them once you're out. How many people need evacuation?"
+
+msgid "Cinco. Yo estoy en la estación. Mara está con otras tres personas."
+msgstr "Five. I'm at the station. Mara is with three others."
+
+msgid "Voy a confirmar una salida para los cinco. Avanza hacia la salida de servicio y mantén la radio encendida."
+msgstr "I'll confirm a way out for all five of you. Head for the service exit and keep your radio on."
+
+msgid "Confirmado: el equipo de rescate está evacuando gente por el puerto."
+msgstr "It's confirmed. The rescue team is evacuating people through the harbor."
+
+msgid "Vayan a la entrada de pasajeros. El equipo de rescate los espera allí. Nico, lleva las pruebas contigo."
+msgstr "Go to the passenger entrance. The rescue team will meet you there. Nico, bring the evidence."
+
+msgid "Mara, ¿lo escuchaste?"
+msgstr "Mara, did you get that?"
+
+msgid "Sí. Llevaré al grupo por la calle de servicio. Nos vemos en la entrada del puerto."
+msgstr "Yes. I'll take the group down the service road. Meet us at the harbor entrance."
+
+msgid "Yo saldré por el patio de la estación."
+msgstr "I'll go through the station yard."
+
+msgid "Ya salí. Voy hacia el puerto."
+msgstr "I'm out. Heading to the harbor."
+
+msgid "Los cuatro seguimos juntos. Ya estamos de camino."
+msgstr "All four of us are together. We're on our way."
+
+msgid "Llevo la memoria y los documentos conmigo. Los entregaré en el barco."
+msgstr "I've got the drive and the documents. I'll hand them over on the boat."
+
+msgid "ENVÍO DE ARCHIVOS"
+msgstr "FILE TRANSFER"
+
+msgid "1. Enciende la alimentación de emergencia.\n\n2. Conecta la antena en el patio.\n\n3. Conecta la memoria al ordenador y selecciona Enviar a la central."
+msgstr "1. Switch on emergency power.\n\n2. Connect the antenna in the yard.\n\n3. Plug in the drive and select Send to Dispatch."
+
+msgid "REGISTRO DE ENTREGAS · RUTA ESTE"
+msgstr "DELIVERY LOG · EAST ROUTE"
+
+msgid "Repartidor: Nico."
+msgstr "Courier: Nico."
+
+msgid "Primer envío: recogida en el Local 24. Segundo envío: recogida en el distrito de carga."
+msgstr "First shipment: pickup at Shop 24. Second shipment: pickup in the freight district."
+
+msgid "Ambos paquetes contenían muestras biológicas del programa Continuidad. Se registraron como material médico común. El repartidor no fue informado."
+msgstr "Both packages contained biological samples from the Continuity program. They were logged as ordinary medical supplies. The courier was not informed."
+
+msgid "CONTINUIDAD · INFORME DE SEGURIDAD"
+msgstr "CONTINUITY · SAFETY REPORT"
+
+msgid "Continuidad era un tratamiento experimental para reparar tejido nervioso."
+msgstr "Continuity was an experimental treatment for repairing nerve tissue."
+
+msgid "El material de las pruebas se volvió infeccioso. Algunos afectados sufrieron cambios graves en el cuerpo y comenzaron a atacar a otras personas."
+msgstr "The test material became infectious. Some patients experienced severe physical changes and began attacking others."
+
+msgid "Las muestras reaccionan al ruido. Mantener los recipientes cerrados. No autorizar nuevos traslados."
+msgstr "The samples respond to noise. Keep containers sealed. Do not authorize further transfers."
+
+msgid "ORDEN DE CONTINUAR LAS RUTAS"
+msgstr "ORDER TO CONTINUE DELIVERIES"
+
+msgid "Ya se han confirmado casos de infección. Aun así, deben continuar los traslados para recuperar las muestras de Continuidad."
+msgstr "Infections have been confirmed. Transfers must continue so that we can recover the Continuity samples."
+
+msgid "No informar del peligro a los repartidores. Si se niegan a continuar, ofrecerles un lugar en la evacuación."
+msgstr "Do not tell the couriers about the danger. If they refuse to continue, offer them a seat on an evacuation vehicle."
+
+msgid "Orden aprobada por Coordinación de rutas."
+msgstr "Order approved by Route Coordination."
+
+msgid "AVISO DE BORRADO DE REGISTROS"
+msgstr "RECORD DELETION NOTICE"
+
+msgid "Cuando termine la retirada de material, se borrarán los registros de los envíos y las órdenes de traslado."
+msgstr "Once the material is removed, the shipping records and transfer orders will be deleted."
+
+msgid "No conservar copias fuera de los equipos de Vértice."
+msgstr "Do not keep copies outside Vértice systems."
+
+msgid "Ese es el centro de distribución. Busca la oficina de archivos."
+msgstr "That's the distribution center. Look for the records office."
+
+msgid "Si guardaron mis entregas, ahí sabré qué llevaba."
+msgstr "If they kept records of my deliveries, I can find out what I was carrying."
+
+msgid "Yo me quedo con los demás. Te escucho por la radio."
+msgstr "I'll stay with the others. I'll be on the radio."
+
+msgid "Aquí están mis dos entregas. Las cajas llevaban muestras biológicas."
+msgstr "Here are my two deliveries. The crates held biological samples."
+
+msgid "¿Dice para qué las usaban?"
+msgstr "Does it say what they were for?"
+
+msgid "Solo pone Continuidad. Voy a buscar ese nombre."
+msgstr "It just says Continuity. I'll look for that name."
+
+msgid "Era un tratamiento. El informe dice que el material se volvió infeccioso."
+msgstr "It was a treatment. The report says the material became infectious."
+
+msgid "Y que algunas personas empezaron a cambiar y a atacar a los demás."
+msgstr "And some people started changing and attacking others."
+
+msgid "Entonces ya habían detectado el peligro. Busca si detuvieron los envíos."
+msgstr "So they already knew it was dangerous. Find out if they stopped the shipments."
+
+msgid "Voy a llamar al número de supervisión. Quiero que me explique esta orden."
+msgstr "I'm calling the supervisor's number. I want him to explain this order."
+
+msgid "Nico. ¿Dónde estás?"
+msgstr "Nico. Where are you?"
+
+msgid "En el centro de distribución. Encontré la orden de seguir enviando muestras después de los primeros contagios."
+msgstr "At the distribution center. I found the order to keep shipping samples after the first infections."
+
+msgid "La aprobó Coordinación de rutas. ¿Fuiste tú?"
+msgstr "Route Coordination signed off on it. Was that you?"
+
+msgid "Sí. Teníamos que recuperar el material."
+msgstr "Yes. We had to recover the material."
+
+msgid "Sabías que era peligroso. Y me prometiste una evacuación para que siguiera."
+msgstr "You knew it was dangerous. You promised me a way out so I'd keep going."
+
+msgid "Me ordenaron mantener las entregas. Deja los registros y sal de ahí."
+msgstr "I was ordered to keep deliveries running. Leave the records and get out."
+
+msgid "No. Me los llevo."
+msgstr "No. I'm taking them with me."
+
+msgid "Quieren borrar los registros. Voy a copiarlos en esta memoria."
+msgstr "They want to erase the records. I'll copy them onto this drive."
+
+msgid "Llévate también las órdenes. Necesitamos demostrar que lo sabían."
+msgstr "Take the orders too. We need to prove they knew."
+
+msgid "La copia está lista. Se activó una alarma."
+msgstr "The copy's done. An alarm just went off."
+
+msgid "Sal por el patio de carga. Busca el portón de servicio."
+msgstr "Get out through the loading yard. Look for the service gate."
+
+msgid "Ya estoy fuera. Tengo los registros y las órdenes."
+msgstr "I'm outside. I've got the records and the orders."
+
+msgid "Hay una estación de radio cerca. Tiene un equipo para enviar archivos fuera de la ciudad."
+msgstr "There's a radio station nearby. They have equipment that can send files outside the city."
+
+msgid "¿Podemos mandar la copia desde ahí?"
+msgstr "Can we send the copy from there?"
+
+msgid "Sí, si el equipo sigue funcionando. Te indicaré el camino."
+msgstr "Yes, if the equipment still works. I'll guide you."
+
+msgid "Entonces voy para allá. Esto tiene que saberse."
+msgstr "Then that's where I'm going. People need to know about this."
+
+msgid "Nico entregó la memoria y los documentos al equipo de rescate. El Jefe está bajo custodia y tendrá que responder por las entregas."
+msgstr "Nico handed the drive and documents to the rescue team. The Boss is in custody and will have to answer for the shipments."
+
+msgid "VÉRTICE · AVISO AUTOMÁTICO"
+msgstr "VÉRTICE · AUTOMATED NOTICE"
+
+msgid "Nueva entrega disponible."
+msgstr "New delivery available."
+
+msgid "¿Otra entrega?"
+msgstr "Another delivery?"
+
+msgid "No. Ya terminé."
+msgstr "No. I'm done."
+
+msgid "Nico apaga el teléfono. Esta vez, la ciudad queda atrás."
+msgstr "Nico turns off his phone. This time, he leaves the city behind."
+
+msgid "THE LAST ROUTE\nLa última ruta terminó."
+msgstr "THE LAST ROUTE\nThe last route is over."
+
+msgid "Gracias por jugar"
+msgstr "Thank you for playing"
+
+msgid "El barco de rescate está en la terminal de pasajeros. El carguero de Vértice es otro barco."
+msgstr "The rescue boat is at the passenger terminal. The Vértice freighter is a different ship."
+
+msgid "Una reja de Vértice nos bloquea el paso. El camino al rescate está al otro lado."
+msgstr "A Vértice gate is blocking our way. The route to the rescue boat is on the other side."
+
+msgid "Entraré por el acceso de servicio. Buscaré cómo abrirles."
+msgstr "I'll go in through the service entrance and find a way to let you through."
+
+msgid "ORDEN DE EMBARQUE · VÉRTICE"
+msgstr "BOARDING ORDER · VÉRTICE"
+
+msgid "Solo pueden embarcar las muestras del programa y el personal de Vértice incluido en la lista.\n\nNo se permite el acceso de civiles ni repartidores. Mantener cerrada la reja de carga hasta terminar el traslado."
+msgstr "Only program samples and listed Vértice personnel may board.\n\nNo civilians or couriers may enter. Keep the freight gate closed until the transfer is complete."
+
+msgid "Había un barco para ellos y sus muestras. A nosotros nunca pensaron llevarnos."
+msgstr "They had a boat for themselves and their samples. They never meant to take us."
+
+msgid "Encontré las órdenes de traslado. Los paquetes y las muestras están registrados."
+msgstr "I found the transfer orders. There's a record of the packages and the samples."
+
+msgid "Esos documentos pertenecen a la empresa. Entrégamelos."
+msgstr "Those documents belong to the company. Hand them over."
+
+msgid "Los entregaré al equipo de rescate. También llevo la memoria con los registros."
+msgstr "I'm giving them to the rescue team. I've got the drive with the records too."
+
+msgid "No sabes lo que estás haciendo."
+msgstr "You don't know what you're doing."
+
+msgid "Sé que nos enviaron a repartir material infectado sin avisarnos."
+msgstr "I know you sent us out with infected material and never warned us."
+
+msgid "Puedo incluirte en la lista de nuestro transporte. Saldrías con nosotros."
+msgstr "I can put your name on our passenger list. You could leave with us."
+
+msgid "¿Y Mara y las tres personas que vienen con ella?"
+msgstr "What about Mara and the three people with her?"
+
+msgid "Solo puedo ofrecerte un lugar."
+msgstr "I can only offer you one seat."
+
+msgid "Entonces abre la reja. Por ahí podemos llegar al barco de rescate."
+msgstr "Then open the gate. We can reach the rescue boat through there."
+
+msgid "No voy a dejar entrar a nadie mientras cargamos las muestras."
+msgstr "Nobody gets in while we're loading the samples."
+
+msgid "No te estoy pidiendo que nos lleves. Abre el paso."
+msgstr "I'm not asking for a ride. Open the gate."
+
+msgid "Voy al muelle. Tú decides si vienes."
+msgstr "I'm going to the dock. You decide if you're coming."
+
+msgid "Mara, la reja está abierta. Pasen los cuatro y sigan por el costado protegido."
+msgstr "Mara, the gate's open. All four of you, come through and stay on the protected side."
+
+msgid "Estamos entrando. Vamos los cuatro."
+msgstr "We're coming through. All four of us."
+
+msgid "Yo mantendré a los infectados lejos. Avancen hacia el rescate."
+msgstr "I'll keep the infected off you. Head for the rescue boat."
+
+msgid "GUARDIA"
+msgstr "GUARD"
+
+msgid "¡Se rompieron las sujeciones! ¡Disparen a esa cosa!"
+msgstr "The restraints snapped! Shoot that thing!"
+
+msgid "¡Deténganla! ¡Voy al puesto de seguridad!"
+msgstr "Stop it! I'm heading to the security post!"
+
+msgid "¡Mara, corran al barco! ¡Yo detendré a esa cosa!"
+msgstr "Mara, run for the boat! I'll stop that thing!"
+
+msgid "¡Ven con nosotros!"
+msgstr "Come with us!"
+
+msgid "¡Si nos sigue, llegará hasta los demás! ¡Muévanse!"
+msgstr "If it follows us, it'll reach the others! Move!"
+
+msgid "Mara, los documentos y la memoria están seguros. Se los entregaré a las autoridades al subir al barco."
+msgstr "Mara, the documents and the drive are safe. I'll give them to the authorities when we board."
+
+msgid "Bien. La policía ya detuvo al Jefe. Ahora tenemos que salir de aquí."
+msgstr "Good. The police already have the Boss. Now let's get out of here."
+
+msgid "¿Están todos?"
+msgstr "Is everyone here?"
+
+msgid "Sí. Solo faltas tú."
+msgstr "Yes. We're just waiting for you."
+
+msgid "Entonces vámonos."
+msgstr "Then let's go."
+
+msgid "Hasta aquí, Nico. Dame la memoria y los documentos."
+msgstr "Far enough, Nico. Give me the drive and the documents."
+
+msgid "Deja pasar a estas personas. Necesitan salir de la ciudad."
+msgstr "Let these people through. They need to get out of the city."
+
+msgid "Nadie pasa hasta que me entregues todo."
+msgstr "Nobody goes through until you give me everything."
+
+msgid "El barco está ahí. No puedes dejarnos aquí."
+msgstr "The boat's right there. You can't leave us here."
+
+msgid "Apártense de él. Esto puede terminar sin que nadie salga herido."
+msgstr "Step away from him. Nobody has to get hurt."
+
+msgid "Si te doy las pruebas, vas a destruirlas."
+msgstr "If I give you the evidence, you'll destroy it."
+
+msgid "Es tu última oportunidad."
+msgstr "This is your last chance."
+
+msgid "Señor... el contenedor se está moviendo."
+msgstr "Sir... the container is moving."
+
+msgid "Mantén tu posición."
+msgstr "Hold your position."
+
+msgid "¿Alguien me escucha? Estamos en el taller junto al canal."
+msgstr "Can anyone hear me? We're in the workshop by the canal."
+
+msgid "La puerta no va a aguantar mucho."
+msgstr "The door won't hold much longer."
+
+msgid "Te escucho. Acabo de salir del campamento. ¿Dónde está el taller?"
+msgstr "I hear you. I just got out of the camp. Where's the workshop?"
+
+msgid "Sigue el corredor. Verás una luz naranja sobre la entrada."
+msgstr "Follow the corridor. Look for an orange light above the entrance."
+
+msgid "Voy para allá."
+msgstr "I'm on my way."
+
+msgid "Gracias. Soy Mara. Trabajaba como paramédica en el campamento."
+msgstr "Thank you. I'm Mara. I worked as a paramedic at the camp."
+
+msgid "Soy Nico. Me dijeron que allí iban a evacuarnos."
+msgstr "I'm Nico. They told me we'd be evacuated from there."
+
+msgid "Nos dejaron esperando. Vi salir los vehículos con cajas, pero no se llevaron a las familias."
+msgstr "They left us waiting. I saw vehicles leave with crates, but they left the families behind."
+
+msgid "¿Conoces otra salida?"
+msgstr "Do you know another way out?"
+
+msgid "Hay una salida por esta calle. Pero la compuerta está cerrada."
+msgstr "There's a way out along this street, but the gate is closed."
+
+msgid "El control está en la estación de bombas. Si la abres, podremos cruzar."
+msgstr "The controls are at the pump station. Open it and we can cross."
+
+msgid "Iré al control. Quédense aquí hasta que el camino esté despejado."
+msgstr "I'll go to the controls. Stay here until the way is clear."
+
+msgid "Estoy frente al control. No enciende."
+msgstr "I'm at the panel. It won't turn on."
+
+msgid "Busca el interruptor de emergencia, junto al generador."
+msgstr "Look for the emergency switch next to the generator."
+
+msgid "Lo encontré. Voy a encenderlo."
+msgstr "Found it. I'll turn it on."
+
+msgid "El ruido atraerá a los infectados. Tendrás que esperar a que se abra la compuerta."
+msgstr "The noise will draw the infected. You'll have to hold out while the gate opens."
+
+msgid "La compuerta está abierta. Vengan por el costado de la calle."
+msgstr "The gate's open. Come along the side of the street."
+
+msgid "Vamos hacia ti. Uno de nosotros está herido; avanzaremos despacio."
+msgstr "We're coming. One of us is hurt, so we'll be slow."
+
+msgid "Quédense detrás de las barreras. Yo detendré a los infectados."
+msgstr "Stay behind the barriers. I'll hold off the infected."
+
+msgid "Pasaremos junto a ti, detrás de las barreras. Cúbrenos hasta que lleguemos a la salida."
+msgstr "We'll pass behind the barriers. Cover us until we reach the exit."
+
+msgid "Ya llegamos todos a la salida. Gracias, Nico."
+msgstr "We all made it to the exit. Thank you, Nico."
+
+msgid "Encontré este documento. Habla de los paquetes de la ruta este."
+msgstr "I found this document. It's about the packages on the east route."
+
+msgid "Conozco ese código. Lo usábamos para registrar los traslados del campamento."
+msgstr "I know that code. We used it to log transfers at the camp."
+
+msgid "Yo entregué dos de esos paquetes. Nunca me dijeron qué llevaban."
+msgstr "I delivered two of those packages. Nobody told me what was inside."
+
+msgid "En el centro de distribución guardan el registro completo."
+msgstr "The distribution center keeps the full records."
+
+msgid "Ahí debe decir de dónde salieron y quién ordenó moverlos."
+msgstr "They should tell us where the packages came from and who ordered the transfer."
+
+msgid "¿Se puede llegar desde aquí?"
+msgstr "Can I get there from here?"
+
+msgid "Sí. El camino de servicio termina junto a su entrada. Te indicaré por radio."
+msgstr "Yes. The service road ends at the entrance. I'll guide you by radio."
+
+msgid "Voy a buscar el registro. Quiero saber qué me hicieron transportar."
+msgstr "I'll find the records. I want to know what they made me carry."
+
+msgid "Nico, necesito que hagas otra entrega."
+msgstr "Nico, I need you to make another delivery."
+
+msgid "No. Ya cumplí. Cada vez hay más de esas cosas en la calle."
+msgstr "No. I did my part. There are more of those things in the street every minute."
+
+msgid "El paquete va a un puesto de evacuación."
+msgstr "The package is going to an evacuation point."
+
+msgid "Si lo entregas, te reservaré un lugar y cobrarás las dos entregas."
+msgstr "Deliver it and I'll save you a seat. You'll get paid for both deliveries."
+
+msgid "¿Y cómo se supone que llegue vivo?"
+msgstr "And how am I supposed to get there alive?"
+
+msgid "Junto a la entrada del distrito hay un depósito de seguridad de Vértice."
+msgstr "Vértice has a security locker by the district entrance."
+
+msgid "Dentro hay una pistola y munición. Te envío el código para abrirlo."
+msgstr "There's a pistol and ammo inside. I'll send you the code."
+
+msgid "Dejé el paquete. Aquí no hay nadie. ¿Dónde están los vehículos de evacuación?"
+msgstr "I dropped off the package. Nobody's here. Where are the evacuation vehicles?"
+
+msgid "Aquí solo se reciben paquetes."
+msgstr "This is just a package drop-off site."
+
+msgid "Las personas deben ir al campamento, al otro lado de la estación."
+msgstr "People have to go to the camp on the other side of the station."
+
+msgid "Me dijiste que me sacarías de aquí cuando entregara el paquete."
+msgstr "You said you'd get me out once I delivered the package."
+
+msgid "La calle que lleva al campamento está bloqueada."
+msgstr "The street to the camp is blocked."
+
+msgid "Cruza por el metro. Su salida da al campamento."
+msgstr "Go through the subway. The exit leads to the camp."
+
+msgid "Voy para allá. Espero que esta vez sí haya alguien."
+msgstr "I'm heading there. I hope someone's actually there this time."
+
+msgid "Ya estoy en la estación. No hay luz."
+msgstr "I'm at the station. The lights are out."
+
+msgid "La puerta de salida está sin energía."
+msgstr "The exit door has no power."
+
+msgid "Busca una batería en mantenimiento y conéctala al panel de control."
+msgstr "Find a battery in maintenance and connect it to the control panel."
+
+msgid "¿Esa puerta lleva al campamento?"
+msgstr "Does that door lead to the camp?"
+
+msgid "Sí. Cuando el sistema termine de arrancar, podrás abrirla."
+msgstr "Yes. Once the system finishes starting up, you'll be able to open it."
+
+msgid "Está bien. Buscaré la batería."
+msgstr "Okay. I'll find the battery."
+
+msgid "Hay más cajas de Vértice. Son iguales a las que entregué. ¿Qué hacen aquí?"
+msgstr "More Vértice crates. They're just like the ones I delivered. What are they doing here?"
+
+msgid "Es la zona de carga del campamento. Cruza la puerta y ve a recepción. Allí debes esperar."
+msgstr "It's the camp loading area. Go through the gate and wait at reception."
+
+msgid "Voy a entrar. Quiero encontrar a los encargados de la evacuación."
+msgstr "I'm going in. I want to find whoever's in charge of the evacuation."
+
+msgid "La puerta está abierta. Sal por el corredor de servicio."
+msgstr "The door's open. Leave through the service corridor."
+
+msgid "¿Por ahí puedo salir de la ciudad?"
+msgstr "Can I get out of the city that way?"
+
+msgid "No. Esa puerta solo te saca del campamento."
+msgstr "No. That door only gets you out of the camp."
+
+msgid "Ese camino todavía está dentro de la ciudad. Aún no has salido de la zona de peligro."
+msgstr "That road is still inside the city. You're still in the danger zone."
+
+msgid "Buscando cómo abrir la salida encontré la tarjeta del supervisor. Habían dejado unos documentos junto a ella."
+msgstr "While I was looking for a way to open the exit, I found the supervisor's keycard. Someone left documents next to it."
+
+msgid "Encontré un documento. Dice que no iban a evacuarnos."
+msgstr "I found a document. It says they never meant to evacuate us."
+
+msgid "Y que debían mentirnos para que termináramos las entregas. Tú me prometiste un lugar."
+msgstr "It says they had to lie so we'd finish the deliveries. You promised me a seat."
+
+msgid "Leí el documento sobre los paquetes. Dice que algo se mueve dentro de las cajas."
+msgstr "I read the document about the packages. It says something moves inside the crates."
+
+msgid "También dice que no debían contárnoslo. Me mentiste sobre los paquetes."
+msgstr "It says you weren't supposed to tell us. You lied to me about those packages."
+
+msgid "Esos documentos debían haberse retirado. Te dije que esperaras en recepción."
+msgstr "Those documents should have been removed. I told you to wait at reception."
+
+msgid "Deja ese documento, Nico."
+msgstr "Put that document down, Nico."
+
+msgid "Todavía puedo ayudarte a salir de la ciudad, pero tienes que seguir mis instrucciones."
+msgstr "I can still help you get out of the city, but you have to follow my instructions."
+
+msgid "Ya no confío en ti. Me llevo el documento para demostrar lo que hicieron."
+msgstr "I don't trust you anymore. I'm taking the document to prove what you did."
+
+msgid "Ya tengo el arma. Después de esta entrega me sacas de aquí."
+msgstr "I've got the gun. After this delivery, you're getting me out of here."
+
+msgid "Te enviaré la ubicación del paquete. Recógelo y llévalo al puesto."
+msgstr "I'll send you the pickup location. Get the package and take it to the checkpoint."
+
+msgid "ANTES DEL TURNO"
+msgstr "BEFORE THE SHIFT"
+
+msgid "Desde que cerró el taller, Nico trabaja como repartidor para Vértice."
+msgstr "Since the workshop closed, Nico has worked as a courier for Vértice."
+
+msgid "Entre la renta y las medicinas de su madre, el dinero no alcanza."
+msgstr "Between the rent and his mother's medicine, the money never stretches far enough."
+
+msgid "MAMÁ · MENSAJE"
+msgstr "MOM · MESSAGE"
+
+msgid "Hijo, ya casi se me terminan las medicinas. Llámame cuando puedas. Cuídate."
+msgstr "Son, I'm almost out of medicine. Call me when you can. Take care."
+
+msgid "VÉRTICE · REPARTOS"
+msgstr "VÉRTICE · DELIVERIES"
+
+msgid "Ruta nocturna disponible. Pago extra al completar las entregas."
+msgstr "Night route available. Extra pay for completing all deliveries."
+
+msgid "Con el pago de esta noche puedo mandarle dinero a mamá."
+msgstr "Tonight's pay should be enough to send Mom some money."
+
+msgid "Más tarde. Distrito comercial."
+msgstr "Later that night. Shopping district."
+
+msgid "Una radio. A ver si todavía funciona."
+msgstr "A radio. Let's see if it still works."
+
+msgid "Sí, funciona. Se escucha algo..."
+msgstr "Yeah, it works. I can hear something..."
+
+msgid "reiniciando"
+msgstr "restarting"
+
+msgid "embarcar"
+msgstr "board the boat"
+
+msgid "avanzar"
+msgstr "move on"
+
+msgid "interactuar"
+msgstr "interact"
+
+msgid "leer documento"
+msgstr "read document"
+
+msgid "recoger escopeta"
+msgstr "pick up shotgun"
+
+msgid "abrir salida con la tarjeta"
+msgstr "unlock exit with keycard"
+
+msgid "recoger tarjeta"
+msgstr "pick up keycard"
+
+msgid "llamar al Jefe"
+msgstr "call the Boss"
+
+msgid "copiar registros"
+msgstr "copy records"
+
+msgid "salir con las pruebas"
+msgstr "leave with the evidence"
+
+msgid "recoger paquete"
+msgstr "pick up package"
+
+msgid "entregar paquete"
+msgstr "deliver package"
+
+msgid "recoger batería"
+msgstr "pick up battery"
+
+msgid "instalar batería"
+msgstr "install battery"
+
+msgid "cruzar salida"
+msgstr "go through exit"
+
+msgid "hablar con Mara"
+msgstr "talk to Mara"
+
+msgid "encender el generador"
+msgstr "start the generator"
+
+msgid "avisar a Mara"
+msgstr "signal Mara"
+
+msgid "continuar"
+msgstr "continue"
+
+msgid "cerrar documento"
+msgstr "close document"

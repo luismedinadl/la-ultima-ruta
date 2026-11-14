@@ -378,7 +378,7 @@ func start_wave(number: int) -> void:
 		3: queue_group(5,2,1)
 		4: queue_group(5,2,1)
 	audio.cue("wave",-13)
-	announcement.emit("ENCUENTRO %d / 4" % number)
+	announcement.emit(tr("ENCUENTRO %d / 4") % number)
 func advance_encounter() -> void:
 	if not arrivals.is_empty(): return
 	if stage in [6,9] and not reinforcement_sent and remaining()<=2:
@@ -433,13 +433,20 @@ func advance_arrivals(delta: float) -> void:
 		spawn_enemy(entry.position,entry.tough,true,false,entry.dog)
 		entry.warning.queue_free()
 		arrivals.erase(entry)
+func interaction_action() -> String:
+	if stage == 7 or stage in HARBOR_FIGHTS or (stage == 14 and not survivors_at_rescue()): return ""
+	if absf(player.position.x-destination())<70:
+		return {4:"leer orden",5:"hablar con el Jefe",14:"embarcar"}.get(stage,"")
+	return ""
+
 func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
 	if stage==14 and absf(player.position.x-delivery_x)<100 and not survivors_at_rescue(): return "Espera a Mara y al grupo"
 	if stage==7: return "Dispara al interruptor rojo del lado de carga"
 	if stage in HARBOR_FIGHTS: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
-	if absf(player.position.x-destination())<70:
-		return "E / Enter · "+{4:"leer orden",5:"hablar con el Jefe",7:"abrir reja",14:"embarcar"}.get(stage,"avanzar")
-	return "Objetivo · %d m →   Tab · documentos" % int(absf(destination()-player.position.x)/METRE)
+	return tr("Objetivo · %d m →   Tab · documentos") % int(absf(destination()-player.position.x)/METRE)
+
 func interact() -> void:
 	if blocked or player.dead or player.action_time>0 or absf(player.position.x-destination())>=70: return
 	match stage:

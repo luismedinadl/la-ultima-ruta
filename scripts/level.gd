@@ -336,7 +336,7 @@ func start_wave(number: int) -> void:
 	goal = objective_text()
 	var definition := RoutePlan.wave(number) if level_number == 1 else RouteLevelTwo.wave(number)
 	objective_changed.emit(goal)
-	announcement.emit("OLEADA %d  /  %d INFECTADOS" % [number, definition.count])
+	announcement.emit(tr("OLEADA %d  /  %d INFECTADOS") % [number, definition.count])
 	audio.cue("wave", -14)
 	if definition.count>=5: audio.cue("zombie",-16)
 	for side in [-1, 1]:
@@ -363,20 +363,26 @@ func enemy_killed(_enemy: RouteEnemy) -> void:
 		wave_locks.clear()
 		if stage == wave_count * 2: gate.hide()
 		objective_changed.emit(goal)
-		announcement.emit("RUTA DESPEJADA  /  " + ("ENTRADA ABIERTA" if stage == wave_count * 2 else "PUNTO SEGURO"))
+		announcement.emit(tr("RUTA DESPEJADA  /  ") + tr("ENTRADA ABIERTA" if stage == wave_count * 2 else "PUNTO SEGURO"))
 		checkpoint.emit(snapshot())
 
+func interaction_action() -> String:
+	if player.action_time > 0: return ""
+	if stage == 0 and player.position.distance_to(package_point) < 62: return "recoger paquete"
+	if stage == wave_count * 2 and player.position.distance_to(Vector2(delivery_x, 207)) < 65: return "entregar paquete"
+	return ""
+
 func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
 	if stage % 2 == 1 and stage < wave_count * 2: return "Espacio / clic · disparar   R · recargar   Q · arma" if player.has_pistol else "Espacio · cuchillo    |    Muévete para esquivar"
 	if player.action_time > 0: return ""
-	if stage == 0 and player.position.distance_to(package_point) < 62: return "E / Enter · recoger paquete"
-	if stage == wave_count * 2 and player.position.distance_to(Vector2(delivery_x, 207)) < 65: return "E / Enter · entregar paquete"
 	for key in medkits:
 		if not collected.has(key) and player.position.distance_to(medkits[key].position) < 45:
 			return "Botiquín (+35) · recogida automática" if player.health < 100 else "Salud completa"
 	var target_x := destination()
 	var distance := int(absf(target_x - player.position.x) / METRE)
-	return "←  Objetivo · %d m" % distance if player.position.x > target_x else "Objetivo · %d m  →" % distance
+	return tr("←  Objetivo · %d m") % distance if player.position.x > target_x else tr("Objetivo · %d m  →") % distance
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time > 0: return
@@ -463,7 +469,7 @@ func destination() -> float:
 func objective_text() -> String:
 	if level_number == 1: return RoutePlan.objective(stage)
 	if stage == 0: return "Recoge el paquete marcado"
-	if stage % 2 == 1 and stage < 10: return "Sobrevive · oleada %d / 5" % (int((stage + 1) / 2.0))
+	if stage % 2 == 1 and stage < 10: return tr("Sobrevive · oleada %d / 5") % (int((stage + 1) / 2.0))
 	if stage == 10: return "Entrega en el puesto de evacuación"
 	if stage > 10: return "Entrega completada"
 	return ["", "Avanza al almacén", "Cruza el paso ferroviario", "Llega al control de carga", "Alcanza la evacuación"][int(stage / 2.0)]
@@ -479,7 +485,7 @@ func collect_ammo() -> void:
 		ammo_taken.append(key)
 		item.sprite.hide()
 		audio.cue("pickup", -16)
-		announcement.emit("+%d MUNICIÓN" % amount)
+		announcement.emit(tr("+%d MUNICIÓN") % amount)
 		var halo := add_sprite(self, RouteArt.weapon_item(7), item.sprite.position, Vector2(30,20))
 		halo.z_index = 3
 		var tween := create_tween()

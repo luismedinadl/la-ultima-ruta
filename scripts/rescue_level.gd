@@ -116,7 +116,7 @@ func _process(delta: float) -> void:
 				reinforcements_sent = true
 				spawn_group(4,1,false,true)
 				announcement.emit("LLEGAN MÁS INFECTADOS · 4")
-			goal = "Abriendo compuerta · %d%% · despeja la zona" % int(opening_progress/OPEN_SECONDS*100)
+			goal = tr("Abriendo compuerta · %d%% · despeja la zona") % int(opening_progress/OPEN_SECONDS*100)
 			if opening_progress>=OPEN_SECONDS and remaining()==0:
 				set_stage(8)
 				set_machine_state()
@@ -137,7 +137,7 @@ func _process(delta: float) -> void:
 				spawn_group(6,2,false,true)
 				audio.cue("wave",-15)
 				announcement.emit("OLEADA 6 / 6 · PROTEGE LA SALIDA")
-			goal = "Protege al grupo · %d%%" % int(crossing_progress/CROSS_SECONDS*100)
+			goal = tr("Protege al grupo · %d%%") % int(crossing_progress/CROSS_SECONDS*100)
 			if crossing_progress>=CROSS_SECONDS and last_wave_sent and remaining()==0:
 				set_stage(11)
 				announcement.emit("LOS TRES SUPERVIVIENTES ESTÁN A SALVO")
@@ -165,7 +165,7 @@ func start_wave(number: int) -> void:
 		3: spawn_group(5,1,false,true)
 		4: spawn_group(8,2,true,true)
 	audio.cue("wave",-15)
-	announcement.emit("OLEADA %d / 6" % number)
+	announcement.emit(tr("OLEADA %d / 6") % number)
 
 func spawn_group(count: int, tough_count: int, dog: bool, alerted: bool) -> void:
 	for i in count:
@@ -180,7 +180,7 @@ func enemy_killed(_enemy: RouteEnemy) -> void:
 	kills += 1
 	if stage in [1,4] and remaining()==0:
 		set_stage(2 if stage==1 else 5)
-		announcement.emit("PASO DESPEJADO · "+goal)
+		announcement.emit(tr("PASO DESPEJADO · ") + tr(goal))
 		checkpoint.emit(snapshot())
 
 func clamp_actor(pos: Vector2) -> Vector2:
@@ -203,13 +203,18 @@ func destination() -> float:
 func objective_text() -> String:
 	return {0:"Llega al taller",1:"Despeja la entrada del taller",2:"Habla con Mara",3:"Llega a la estación de bombas",4:"Despeja el acceso al control",5:"Enciende el generador",6:"Escucha a Mara",7:"Sobrevive mientras se abre la compuerta",8:"Llega al paso del canal",9:"Avisa a Mara",10:"Protege el paso",11:"Reúnete con Mara",12:"Supervivientes a salvo"}.get(stage,"")
 
-func interaction_hint() -> String:
-	if stage in [1,4,7,10]: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
+func interaction_action() -> String:
 	if absf(player.position.x-destination())<65:
-		if stage in [2,11]: return "E / Enter · hablar con Mara"
-		if stage==5: return "E / Enter · encender el generador"
-		if stage==8: return "E / Enter · avisar a Mara"
-	return "Objetivo · %d m →" % int(absf(destination()-player.position.x)/METRE)
+		if stage in [2,11]: return "hablar con Mara"
+		if stage==5: return "encender el generador"
+		if stage==8: return "avisar a Mara"
+	return ""
+
+func interaction_hint() -> String:
+	var action := interaction_action()
+	if not action.is_empty(): return "E / Enter · " + tr(action)
+	if stage in [1,4,7,10]: return "Espacio / clic · atacar   R · recargar   Q · cambiar arma"
+	return tr("Objetivo · %d m →") % int(absf(destination()-player.position.x)/METRE)
 
 func interact() -> void:
 	if blocked or player.dead or player.action_time>0 or absf(player.position.x-destination())>=65: return

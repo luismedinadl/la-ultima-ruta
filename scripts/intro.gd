@@ -74,7 +74,7 @@ func show_page() -> void:
 	speaker.text = entry.name
 	body.text = entry.text
 	phone_notice.visible = entry.image == "02_telefono.png"
-	phone_notice.text = ("MAMÁ" if page == 2 else "VÉRTICE")+"\n\n1 mensaje\nnuevo"
+	phone_notice.text = tr("MAMÁ" if page == 2 else "VÉRTICE")+tr("\n\n1 mensaje\nnuevo")
 	counter.text = "%02d / %02d" % [page+1,pages.size()]
 	var title_card: bool = entry.image.is_empty()
 	caption.position = Vector2(16,126) if title_card else Vector2(16,198 if ui.mobile else 229)
