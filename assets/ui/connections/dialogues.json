@@ -1,0 +1,203 @@
+{
+  "level2_open": [
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Nico, necesito que hagas otra entrega."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "No. Ya cumplí. Cada vez hay más de esas cosas en la calle."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "El paquete va a un puesto de evacuación."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Si lo entregas, te reservaré un lugar y cobrarás las dos entregas."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Y cómo se supone que llegue vivo?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Junto a la entrada del distrito hay un depósito de seguridad de Vértice."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Dentro hay una pistola y munición. Te envío el código para abrirlo."
+    }
+  ],
+  "level2_end": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Dejé el paquete. Aquí no hay nadie. ¿Dónde están los vehículos de evacuación?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Aquí solo se reciben paquetes."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Las personas deben ir al campamento, al otro lado de la estación."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Me dijiste que me sacarías de aquí cuando entregara el paquete."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "La calle que lleva al campamento está bloqueada."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Cruza por el metro. Su salida da al campamento."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Voy para allá. Espero que esta vez sí haya alguien."
+    }
+  ],
+  "level3_open": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Ya estoy en la estación. No hay luz."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "La puerta de salida está sin energía."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Busca una batería en mantenimiento y conéctala al panel de control."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Esa puerta lleva al campamento?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Sí. Cuando el sistema termine de arrancar, podrás abrirla."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Está bien. Buscaré la batería."
+    }
+  ],
+  "level3_end": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Hay más cajas de Vértice. Son iguales a las que entregué. ¿Qué hacen aquí?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Es la zona de carga del campamento. Cruza la puerta y ve a recepción. Allí debes esperar."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Voy a entrar. Quiero encontrar a los encargados de la evacuación."
+    }
+  ],
+  "level4_end_start": [
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "La puerta está abierta. Sal por el corredor de servicio."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Por ahí puedo salir de la ciudad?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "No. Esa puerta solo te saca del campamento."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Ese camino todavía está dentro de la ciudad. Aún no has salido de la zona de peligro."
+    }
+  ],
+  "level4_read_order": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Buscando cómo abrir la salida encontré la tarjeta del supervisor. Habían dejado unos documentos junto a ella."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Encontré un documento. Dice que no iban a evacuarnos."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Y que debían mentirnos para que termináramos las entregas. Tú me prometiste un lugar."
+    }
+  ],
+  "level4_read_record": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Buscando cómo abrir la salida encontré la tarjeta del supervisor. Habían dejado unos documentos junto a ella."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Leí el documento sobre los paquetes. Dice que algo se mueve dentro de las cajas."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "También dice que no debían contárnoslo. Me mentiste sobre los paquetes."
+    }
+  ],
+  "level4_end_finish": [
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Esos documentos debían haberse retirado. Te dije que esperaras en recepción."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Deja ese documento, Nico."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 3,
+      "text": "Todavía puedo ayudarte a salir de la ciudad, pero tienes que seguir mis instrucciones."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Ya no confío en ti. Me llevo el documento para demostrar lo que hicieron."
+    }
+  ]
+}

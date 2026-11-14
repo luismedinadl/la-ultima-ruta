@@ -1,0 +1,37 @@
+[
+  {
+    "image": "custody.png",
+    "name": "OPERADORA",
+    "text": "Nico entregó la memoria y los documentos al equipo de rescate. El Jefe está bajo custodia y tendrá que responder por las entregas."
+  },
+  {
+    "image": "aboard.png",
+    "name": "VÉRTICE · AVISO AUTOMÁTICO",
+    "text": "Nueva entrega disponible."
+  },
+  {
+    "image": "aboard.png",
+    "name": "MARA",
+    "text": "¿Otra entrega?"
+  },
+  {
+    "image": "aboard.png",
+    "name": "NICO",
+    "text": "No. Ya terminé."
+  },
+  {
+    "image": "departure.png",
+    "name": "",
+    "text": "Nico apaga el teléfono. Esta vez, la ciudad queda atrás."
+  },
+  {
+    "image": "",
+    "name": "",
+    "text": "THE LAST ROUTE\nLa última ruta terminó."
+  },
+  {
+    "image": "",
+    "name": "",
+    "text": "Gracias por jugar"
+  }
+]

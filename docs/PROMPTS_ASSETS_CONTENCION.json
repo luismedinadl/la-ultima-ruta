@@ -1,0 +1,22 @@
+[
+  [
+    "hollow_walk",
+    "Reference design EL HUECO creature bottom right only. Create final transparent game spritesheet 1536x1024, EXACTLY 5 rows 6 columns 30 separate complete figures. Row directions south, southwest, west, northwest, north. Six sequential walking animation poses each row, full body and feet, same size. Terrifying faceless elongated ivory head vertical faint violet slit, charcoal sinewy body ivory bone plates, long claw arms digitigrade legs. Detailed crisp pixel art 3/4 overhead. Wide transparent gutters, all figures isolated not touching, no floor shadows no text no grid. Keep coherent design all frames."
+  ],
+  [
+    "kit",
+    "Reference mood/design. Create final transparent pixel art game prop atlas 1536x1024 EXACTLY 3 columns 3 rows, 9 isolated objects generously spaced, 3/4 overhead view. Row1: abandoned ambulance facing southwest; canvas quarantine medical tent front door visible; industrial emergency exit wall module with closed steel door and green exit lamp. Row2: steel cage open empty; long horizontal concrete road barricade striped worn yellow; portable floodlight stand. Row3: sealed evidence folder with supervisor keycard on it; rugged pump shotgun dark steel worn wood facing left side view; small open box of red shotgun shells. No words no grid no background no cast shadow. Detailed atmospheric dark pixel art, muted charcoal dirty ivory restrained amber, sharp edges."
+  ],
+  [
+    "nico_walk",
+    "Reference image is character identity only. Create NEW final transparent pixel art spritesheet of same Nico dark hair black courier jacket orange backpack cyan strips BUT holding a pump shotgun dark steel worn wood stock in BOTH HANDS, no pistol. EXACT 5 rows 6 columns 30 complete separate figures. Rows south southwest west northwest north, six sequential walk frames per row. Same size in all frames. Full body including feet no cropping. 1536x1024 transparent gutters no backdrop shadow no labels no grid, crisp detailed pixel art 3/4 overhead."
+  ],
+  [
+    "hollow_attack",
+    "Use reference for identical EL HUECO creature design. Final transparent pixel art game sprite atlas EXACTLY 5 rows 6 columns 30 full isolated figures. Row orientations south southwest west northwest north, fixed orientation within each row. Six consecutive claw attack poses: prepare, raise long arm, wind up, slash forwards, follow through, recover. Eyeless elongated ivory wedge head thin violet vertical fissure, dark tendons irregular bone plates digitigrade feet. Same scale consistent silhouette. 1536x1024 clear transparent gutters, no background no ground shadows no text grid labels. Full claws feet heads never cropped."
+  ],
+  [
+    "hollow_hurt_death",
+    "Use reference for identical EL HUECO creature. Final transparent pixel art spritesheet EXACTLY 5 rows 6 columns 30 isolated figures. Row directions south southwest west northwest north. EACH ROW first three columns: three hurt recoil poses. Last three columns: sequential death kneeling, collapsing, lying fully dead flat body on floor. Complete isolated bodies including long arms feet. Ivory faceless elongated wedge head thin violet fissure, charcoal tendon body bone plates. Same scale, 1536x1024 large transparent gutters no groundshadow no background text grid. Final death unmistakably horizontal corpse."
+  ]
+]

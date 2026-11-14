@@ -1,0 +1,8 @@
+[
+  {"image":"01_habitacion.png","name":"ANTES DEL TURNO","text":"Desde que cerró el taller, Nico trabaja como repartidor para Vértice."},
+  {"image":"01_habitacion.png","name":"ANTES DEL TURNO","text":"Entre la renta y las medicinas de su madre, el dinero no alcanza."},
+  {"image":"02_telefono.png","name":"MAMÁ · MENSAJE","text":"Hijo, ya casi se me terminan las medicinas. Llámame cuando puedas. Cuídate."},
+  {"image":"02_telefono.png","name":"VÉRTICE · REPARTOS","text":"Ruta nocturna disponible. Pago extra al completar las entregas."},
+  {"image":"03_salida.png","name":"NICO","text":"Con el pago de esta noche puedo mandarle dinero a mamá."},
+  {"image":"","name":"","text":"Más tarde. Distrito comercial."}
+]

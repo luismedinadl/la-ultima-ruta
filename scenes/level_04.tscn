@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bruq2s2bva14a"]
+
+[ext_resource type="Script" uid="uid://b8bqft8n21knk" path="res://scripts/containment_level.gd" id="1"]
+
+[node name="Containment" type="Node2D" unique_id=692225698]
+script = ExtResource("1")

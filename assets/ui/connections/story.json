@@ -1,0 +1,14 @@
+[
+  {
+    "name": "NICO",
+    "portrait": 1,
+    "text": "Ya tengo el arma. Después de esta entrega me sacas de aquí.",
+    "image": "01_deposito_pistola.png"
+  },
+  {
+    "name": "JEFE",
+    "portrait": 3,
+    "text": "Te enviaré la ubicación del paquete. Recógelo y llévalo al puesto.",
+    "image": "01_deposito_pistola.png"
+  }
+]

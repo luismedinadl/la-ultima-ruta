@@ -1,0 +1,211 @@
+{
+  "documents": [
+    [
+      {
+        "name": "REGISTRO DE ENTREGAS · RUTA ESTE",
+        "document": true,
+        "text": "Repartidor: Nico."
+      },
+      {
+        "name": "REGISTRO DE ENTREGAS · RUTA ESTE",
+        "document": true,
+        "text": "Primer envío: recogida en el Local 24. Segundo envío: recogida en el distrito de carga."
+      },
+      {
+        "name": "REGISTRO DE ENTREGAS · RUTA ESTE",
+        "document": true,
+        "text": "Ambos paquetes contenían muestras biológicas del programa Continuidad. Se registraron como material médico común. El repartidor no fue informado."
+      }
+    ],
+    [
+      {
+        "name": "CONTINUIDAD · INFORME DE SEGURIDAD",
+        "document": true,
+        "text": "Continuidad era un tratamiento experimental para reparar tejido nervioso."
+      },
+      {
+        "name": "CONTINUIDAD · INFORME DE SEGURIDAD",
+        "document": true,
+        "text": "El material de las pruebas se volvió infeccioso. Algunos afectados sufrieron cambios graves en el cuerpo y comenzaron a atacar a otras personas."
+      },
+      {
+        "name": "CONTINUIDAD · INFORME DE SEGURIDAD",
+        "document": true,
+        "text": "Las muestras reaccionan al ruido. Mantener los recipientes cerrados. No autorizar nuevos traslados."
+      }
+    ],
+    [
+      {
+        "name": "ORDEN DE CONTINUAR LAS RUTAS",
+        "document": true,
+        "text": "Ya se han confirmado casos de infección. Aun así, deben continuar los traslados para recuperar las muestras de Continuidad."
+      },
+      {
+        "name": "ORDEN DE CONTINUAR LAS RUTAS",
+        "document": true,
+        "text": "No informar del peligro a los repartidores. Si se niegan a continuar, ofrecerles un lugar en la evacuación."
+      },
+      {
+        "name": "ORDEN DE CONTINUAR LAS RUTAS",
+        "document": true,
+        "text": "Orden aprobada por Coordinación de rutas."
+      }
+    ],
+    [
+      {
+        "name": "AVISO DE BORRADO DE REGISTROS",
+        "document": true,
+        "text": "Cuando termine la retirada de material, se borrarán los registros de los envíos y las órdenes de traslado."
+      },
+      {
+        "name": "AVISO DE BORRADO DE REGISTROS",
+        "document": true,
+        "text": "No conservar copias fuera de los equipos de Vértice."
+      }
+    ]
+  ],
+  "dialogues": {
+    "opening": [
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Ese es el centro de distribución. Busca la oficina de archivos."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Si guardaron mis entregas, ahí sabré qué llevaba."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Yo me quedo con los demás. Te escucho por la radio."
+      }
+    ],
+    "registry": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Aquí están mis dos entregas. Las cajas llevaban muestras biológicas."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "¿Dice para qué las usaban?"
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Solo pone Continuidad. Voy a buscar ese nombre."
+      }
+    ],
+    "report": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Era un tratamiento. El informe dice que el material se volvió infeccioso."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Y que algunas personas empezaron a cambiar y a atacar a los demás."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Entonces ya habían detectado el peligro. Busca si detuvieron los envíos."
+      }
+    ],
+    "phone": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Voy a llamar al número de supervisión. Quiero que me explique esta orden."
+      },
+      {
+        "name": "JEFE",
+        "portrait": 3,
+        "text": "Nico. ¿Dónde estás?"
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "En el centro de distribución. Encontré la orden de seguir enviando muestras después de los primeros contagios."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "La aprobó Coordinación de rutas. ¿Fuiste tú?"
+      },
+      {
+        "name": "JEFE",
+        "portrait": 3,
+        "text": "Sí. Teníamos que recuperar el material."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Sabías que era peligroso. Y me prometiste una evacuación para que siguiera."
+      },
+      {
+        "name": "JEFE",
+        "portrait": 3,
+        "text": "Me ordenaron mantener las entregas. Deja los registros y sal de ahí."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "No. Me los llevo."
+      }
+    ],
+    "copy": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Quieren borrar los registros. Voy a copiarlos en esta memoria."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Llévate también las órdenes. Necesitamos demostrar que lo sabían."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "La copia está lista. Se activó una alarma."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Sal por el patio de carga. Busca el portón de servicio."
+      }
+    ],
+    "ending": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Ya estoy fuera. Tengo los registros y las órdenes."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Hay una estación de radio cerca. Tiene un equipo para enviar archivos fuera de la ciudad."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "¿Podemos mandar la copia desde ahí?"
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Sí, si el equipo sigue funcionando. Te indicaré el camino."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Entonces voy para allá. Esto tiene que saberse."
+      }
+    ]
+  }
+}

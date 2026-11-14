@@ -1,0 +1,167 @@
+{
+  "dialogues": {
+    "opening": [
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "La estación está delante. Desde ahí podemos enviar los archivos a la central de emergencias."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "¿Esa central está fuera de la ciudad?"
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Sí. Usábamos esa red en las ambulancias. Yo me quedo con los demás."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Voy a entrar."
+      }
+    ],
+    "entrance": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Solo funcionan las luces de emergencia. Los equipos están apagados."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Busca el cuadro eléctrico. Debe tener un interruptor para la alimentación de emergencia."
+      }
+    ],
+    "power": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Los equipos ya tienen corriente. La pantalla dice que la antena está desconectada."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Busca el armario que está al pie de la antena. El interruptor de conexión estará ahí."
+      }
+    ],
+    "antenna": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "La luz de conexión está encendida."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Vuelve al interior por la puerta de la derecha. La sala de emisión está al fondo."
+      }
+    ],
+    "transmission": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "¿Me escucha alguien? Estoy en la estación de la ciudad."
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Central regional de emergencias. Te escucho. ¿Necesitas ayuda?"
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Tengo archivos de Vértice. Demuestran que siguieron enviando material infectado."
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Conecta la memoria al ordenador. Selecciona Enviar a la central."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Intenté enviarlos, pero la transferencia se cortó. ¿Te llegó algo?"
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Recibimos tu llamada, pero los archivos no llegaron. Lleva la memoria y los documentos al equipo de rescate."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Los tengo conmigo. Ahí están las órdenes de Vértice y los registros de las entregas."
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "No los pierdas. Cuando estén a salvo, podremos revisarlos. Dime cuántas personas necesitan salir."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Cinco. Yo estoy en la estación. Mara está con otras tres personas."
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Voy a confirmar una salida para los cinco. Avanza hacia la salida de servicio y mantén la radio encendida."
+      }
+    ],
+    "harbor": [
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Confirmado: el equipo de rescate está evacuando gente por el puerto."
+      },
+      {
+        "name": "OPERADORA",
+        "portrait": 6,
+        "text": "Vayan a la entrada de pasajeros. El equipo de rescate los espera allí. Nico, lleva las pruebas contigo."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Mara, ¿lo escuchaste?"
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Sí. Llevaré al grupo por la calle de servicio. Nos vemos en la entrada del puerto."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Yo saldré por el patio de la estación."
+      }
+    ],
+    "ending": [
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Ya salí. Voy hacia el puerto."
+      },
+      {
+        "name": "MARA",
+        "portrait": 4,
+        "text": "Los cuatro seguimos juntos. Ya estamos de camino."
+      },
+      {
+        "name": "NICO",
+        "portrait": 1,
+        "text": "Llevo la memoria y los documentos conmigo. Los entregaré en el barco."
+      }
+    ]
+  },
+  "documents": [
+    [
+      {
+        "name": "ENVÍO DE ARCHIVOS",
+        "document": true,
+        "text": "1. Enciende la alimentación de emergencia.\n\n2. Conecta la antena en el patio.\n\n3. Conecta la memoria al ordenador y selecciona Enviar a la central."
+      }
+    ]
+  ]
+}

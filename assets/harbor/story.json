@@ -1,0 +1,218 @@
+{
+  "opening": [
+    {
+      "name": "OPERADORA",
+      "portrait": 6,
+      "text": "El barco de rescate está en la terminal de pasajeros. El carguero de Vértice es otro barco."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Una reja de Vértice nos bloquea el paso. El camino al rescate está al otro lado."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Entraré por el acceso de servicio. Buscaré cómo abrirles."
+    }
+  ],
+  "manifest": [
+    {
+      "name": "ORDEN DE EMBARQUE · VÉRTICE",
+      "document": true,
+      "text": "Solo pueden embarcar las muestras del programa y el personal de Vértice incluido en la lista.\n\nNo se permite el acceso de civiles ni repartidores. Mantener cerrada la reja de carga hasta terminar el traslado."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Había un barco para ellos y sus muestras. A nosotros nunca pensaron llevarnos."
+    }
+  ],
+  "review": [
+    {
+      "name": "ORDEN DE EMBARQUE · VÉRTICE",
+      "document": true,
+      "text": "Solo pueden embarcar las muestras del programa y el personal de Vértice incluido en la lista.\n\nNo se permite el acceso de civiles ni repartidores. Mantener cerrada la reja de carga hasta terminar el traslado."
+    }
+  ],
+  "chief": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Encontré las órdenes de traslado. Los paquetes y las muestras están registrados."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "Esos documentos pertenecen a la empresa. Entrégamelos."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Los entregaré al equipo de rescate. También llevo la memoria con los registros."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "No sabes lo que estás haciendo."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Sé que nos enviaron a repartir material infectado sin avisarnos."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "Puedo incluirte en la lista de nuestro transporte. Saldrías con nosotros."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Y Mara y las tres personas que vienen con ella?"
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "Solo puedo ofrecerte un lugar."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Entonces abre la reja. Por ahí podemos llegar al barco de rescate."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "No voy a dejar entrar a nadie mientras cargamos las muestras."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "No te estoy pidiendo que nos lleves. Abre el paso."
+    },
+    {
+      "name": "JEFE",
+      "portrait": 7,
+      "text": "Voy al muelle. Tú decides si vienes."
+    }
+  ],
+  "cross": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Mara, la reja está abierta. Pasen los cuatro y sigan por el costado protegido."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Estamos entrando. Vamos los cuatro."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Yo mantendré a los infectados lejos. Avancen hacia el rescate."
+    }
+  ],
+  "breakout": [
+    {
+      "name": "GUARDIA",
+      "text": "¡Se rompieron las sujeciones! ¡Disparen a esa cosa!",
+      "corporate_guard": true
+    },
+    {
+      "name": "JEFE",
+      "text": "¡Deténganla! ¡Voy al puesto de seguridad!",
+      "portrait": 8
+    },
+    {
+      "name": "NICO",
+      "text": "¡Mara, corran al barco! ¡Yo detendré a esa cosa!",
+      "portrait": 1
+    },
+    {
+      "name": "MARA",
+      "text": "¡Ven con nosotros!",
+      "portrait": 4
+    },
+    {
+      "name": "NICO",
+      "text": "¡Si nos sigue, llegará hasta los demás! ¡Muévanse!",
+      "portrait": 1
+    }
+  ],
+  "ending": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Mara, los documentos y la memoria están seguros. Se los entregaré a las autoridades al subir al barco."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Bien. La policía ya detuvo al Jefe. Ahora tenemos que salir de aquí."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Están todos?"
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Sí. Solo faltas tú."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Entonces vámonos."
+    }
+  ],
+  "standoff": [
+    {
+      "name": "JEFE",
+      "text": "Hasta aquí, Nico. Dame la memoria y los documentos.",
+      "portrait": 7
+    },
+    {
+      "name": "NICO",
+      "text": "Deja pasar a estas personas. Necesitan salir de la ciudad.",
+      "portrait": 1
+    },
+    {
+      "name": "JEFE",
+      "text": "Nadie pasa hasta que me entregues todo.",
+      "portrait": 7
+    },
+    {
+      "name": "MARA",
+      "text": "El barco está ahí. No puedes dejarnos aquí.",
+      "portrait": 4
+    },
+    {
+      "name": "JEFE",
+      "text": "Apártense de él. Esto puede terminar sin que nadie salga herido.",
+      "portrait": 7
+    },
+    {
+      "name": "NICO",
+      "text": "Si te doy las pruebas, vas a destruirlas.",
+      "portrait": 1
+    },
+    {
+      "name": "JEFE",
+      "text": "Es tu última oportunidad.",
+      "portrait": 7
+    },
+    {
+      "name": "GUARDIA",
+      "text": "Señor... el contenedor se está moviendo.",
+      "corporate_guard": true
+    },
+    {
+      "name": "JEFE",
+      "text": "Mantén tu posición.",
+      "portrait": 7
+    }
+  ]
+}

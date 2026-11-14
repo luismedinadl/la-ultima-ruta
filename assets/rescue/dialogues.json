@@ -1,0 +1,157 @@
+{
+  "opening": [
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "¿Alguien me escucha? Estamos en el taller junto al canal."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "La puerta no va a aguantar mucho."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Te escucho. Acabo de salir del campamento. ¿Dónde está el taller?"
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Sigue el corredor. Verás una luz naranja sobre la entrada."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Voy para allá."
+    }
+  ],
+  "refuge": [
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Gracias. Soy Mara. Trabajaba como paramédica en el campamento."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Soy Nico. Me dijeron que allí iban a evacuarnos."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Nos dejaron esperando. Vi salir los vehículos con cajas, pero no se llevaron a las familias."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Conoces otra salida?"
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Hay una salida por esta calle. Pero la compuerta está cerrada."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "El control está en la estación de bombas. Si la abres, podremos cruzar."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Iré al control. Quédense aquí hasta que el camino esté despejado."
+    }
+  ],
+  "generator": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Estoy frente al control. No enciende."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Busca el interruptor de emergencia, junto al generador."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Lo encontré. Voy a encenderlo."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "El ruido atraerá a los infectados. Tendrás que esperar a que se abra la compuerta."
+    }
+  ],
+  "crossing": [
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "La compuerta está abierta. Vengan por el costado de la calle."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Vamos hacia ti. Uno de nosotros está herido; avanzaremos despacio."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Quédense detrás de las barreras. Yo detendré a los infectados."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Pasaremos junto a ti, detrás de las barreras. Cúbrenos hasta que lleguemos a la salida."
+    }
+  ],
+  "ending": [
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Ya llegamos todos a la salida. Gracias, Nico."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Encontré este documento. Habla de los paquetes de la ruta este."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Conozco ese código. Lo usábamos para registrar los traslados del campamento."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Yo entregué dos de esos paquetes. Nunca me dijeron qué llevaban."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "En el centro de distribución guardan el registro completo."
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Ahí debe decir de dónde salieron y quién ordenó moverlos."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "¿Se puede llegar desde aquí?"
+    },
+    {
+      "name": "MARA",
+      "portrait": 4,
+      "text": "Sí. El camino de servicio termina junto a su entrada. Te indicaré por radio."
+    },
+    {
+      "name": "NICO",
+      "portrait": 1,
+      "text": "Voy a buscar el registro. Quiero saber qué me hicieron transportar."
+    }
+  ]
+}

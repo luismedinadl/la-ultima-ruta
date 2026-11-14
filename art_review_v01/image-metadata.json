@@ -1,0 +1,194 @@
+[
+  {
+    "name": "style",
+    "path": "previews/style.png",
+    "width": 1536,
+    "height": 1024,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  },
+  {
+    "name": "nico_idle",
+    "path": "assets/characters/nico/nico_idle.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_walk",
+    "path": "assets/characters/nico/nico_walk.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_knife_attack",
+    "path": "assets/characters/nico/nico_knife_attack.png",
+    "width": 1087,
+    "height": 1447,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_hurt",
+    "path": "assets/characters/nico/nico_hurt.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_death",
+    "path": "assets/characters/nico/nico_death.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_pickup_package",
+    "path": "assets/characters/nico/nico_pickup_package.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "nico_delivery",
+    "path": "assets/characters/nico/nico_delivery.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_idle",
+    "path": "assets/enemies/zombie/zombie_idle.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_walk",
+    "path": "assets/enemies/zombie/zombie_walk.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_attack",
+    "path": "assets/enemies/zombie/zombie_attack.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_hurt",
+    "path": "assets/enemies/zombie/zombie_hurt.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_death",
+    "path": "assets/enemies/zombie/zombie_death.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "props",
+    "path": "assets/props/props.png",
+    "width": 1402,
+    "height": 1122,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "tiles",
+    "path": "assets/tiles/tiles.png",
+    "width": 1254,
+    "height": 1254,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  },
+  {
+    "name": "architecture",
+    "path": "assets/tiles/architecture.png",
+    "width": 1536,
+    "height": 1024,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "effects",
+    "path": "assets/effects/effects.png",
+    "width": 1024,
+    "height": 1536,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "portraits",
+    "path": "assets/ui/portraits.png",
+    "width": 2172,
+    "height": 724,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  },
+  {
+    "name": "menu",
+    "path": "assets/ui/menu.png",
+    "width": 1672,
+    "height": 941,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  },
+  {
+    "name": "level_preview",
+    "path": "previews/level_preview.png",
+    "width": 1672,
+    "height": 941,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  },
+  {
+    "name": "nico_walk_v02",
+    "path": "assets/characters/nico/nico_walk_v02.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "zombie_walk_v02",
+    "path": "assets/enemies/zombie/zombie_walk_v02.png",
+    "width": 1086,
+    "height": 1448,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "effects_v02",
+    "path": "assets/effects/effects_v02.png",
+    "width": 1024,
+    "height": 1536,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0
+  },
+  {
+    "name": "menu_background",
+    "path": "assets/ui/menu_background.png",
+    "width": 1672,
+    "height": 941,
+    "pixelFormat": "Format24bppRgb",
+    "cornerAlpha": 255
+  }
+]
