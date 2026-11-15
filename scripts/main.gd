@@ -46,6 +46,8 @@ func handle_command(action: String) -> void:
 	match action:
 		"settings": ui.settings_menu(audio)
 		"privacy": ui.privacy_menu()
+		"privacy_web": OS.shell_open("https://trockenstudio.blogspot.com/p/politica-de-privacidad-de-last-route.html")
+		"terms_web": OS.shell_open("https://trockenstudio.blogspot.com/p/terms-of-service-for-last-route.html")
 		"language":
 			Language.select("es" if TranslationServer.get_locale() == "en" else "en")
 			ui.menu(RouteSave.can_continue())
