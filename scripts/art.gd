@@ -105,6 +105,12 @@ static func zombie_walk_anchor(direction: int, frame: int) -> Vector2:
 	return Vector2(data.head[0], data.head[1])
 
 static func prop(index: int) -> AtlasTexture:
+	if index == 8:
+		# The barricade straddles two grid cells. Center it over its collider
+		# and retain the original cell scale and distance from the ground.
+		var barricade := region("props/props.png", Rect2(790, 328, 243, 214))
+		barricade.margin = Rect2(16, 45, 32, 61)
+		return barricade
 	# The car is wider than a nominal grid cell; include the full bumper,
 	# wheels and ground shadow, without the adjacent police barrier.
 	if index == 9:
