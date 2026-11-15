@@ -10,10 +10,10 @@ func run() -> void:
 	ART.bag.clear()
 	for group in 5:
 		var picks := []
-		for i in 4: picks.append(ART.choose())
+		for i in 5: picks.append(ART.choose())
 		picks.sort()
-		check(picks == [0,1,2,3], "random group includes four designs")
-	for variant in [1,2,3,4]:
+		check(picks == [0,1,2,3,5], "random group includes five basic designs")
+	for variant in [1,2,3,4,5]:
 		var frames := ART.frames(variant)
 		var valid := true
 		for action in ["idle","walk","attack","hurt","death"]:
@@ -35,7 +35,7 @@ func run() -> void:
 	level.player.set_physics_process(false)
 	level.blocked = false
 	level.freeze_time = 0
-	for variant in [0,1,2,3,4]:
+	for variant in [0,1,2,3,4,5]:
 		var enemy := RouteEnemy.new()
 		enemy.appearance = variant
 		enemy.resistant = variant == 4
@@ -59,7 +59,7 @@ func run() -> void:
 		enemy.take_damage(1000,enemy.position)
 		await create_timer(0.9).timeout
 		check(enemy.dead and enemy.sprite.frame == 5 and enemy.collision_layer == 0,"death holds corpse: %d"%variant)
-	check(kills == 5,"death counted once per enemy")
+	check(kills == 6,"death counted once per enemy")
 	var resistant := RouteEnemy.new()
 	resistant.resistant = true
 	level.actors.add_child(resistant)
@@ -69,7 +69,7 @@ func run() -> void:
 		level.actors.add_child(special)
 		special.set_physics_process(false)
 		check(special.appearance == 0 and not special.allow_basic_variants,"special enemy keeps own art")
-	for variant in [1,2,3,4]:
+	for variant in [1,2,3,4,5]:
 		var metro := MetroEnemy.new()
 		metro.appearance = variant
 		metro.resistant = variant == 4

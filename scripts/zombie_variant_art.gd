@@ -1,18 +1,20 @@
 extends RefCounted
-## Appearance only. A shuffled group keeps all four designs present without
+## Appearance only. A shuffled group keeps all basic designs present without
 ## changing wave composition, difficulty, hit boxes, perception or attack timing.
 static var bag: Array[int] = []
 static var cache: Dictionary = {}
 static var metadata: Dictionary = {}
 const ROOT := "enemies/zombie_variants/"
 const RESISTANT := 4
+const ICON_ZOMBIE := 5
+const BASIC_DESIGNS := [0, 1, 2, 3, ICON_ZOMBIE]
 
 static func folder(variant: int) -> String:
 	return "enemies/resistant/" if variant == RESISTANT else ROOT+str(variant)+"/"
 
 static func choose() -> int:
 	if bag.is_empty():
-		bag.assign([0, 1, 2, 3])
+		bag.assign(BASIC_DESIGNS)
 		bag.shuffle()
 	return bag.pop_back()
 
