@@ -50,15 +50,6 @@ func handle_command(action: String) -> void:
 		"settings": ui.settings_menu(audio)
 		"privacy": ui.privacy_menu(ads.privacy_required())
 		"ad_privacy": ads.privacy_options()
-		"test_ad":
-			if OS.get_name() == "Android" and OS.is_debug_build():
-				if ads.ad and ads.permitted():
-					ads.transition(func(): ui.settings_menu(audio))
-				else:
-					var status := ads.diagnostic
-					if not ads.permitted(): ads.refresh_consent()
-					else: ads.prepare()
-					ui.show_menu_hint("AdMob", status)
 		"privacy_web": OS.shell_open("https://trockenstudio.blogspot.com/p/politica-de-privacidad-de-last-route.html")
 		"terms_web": OS.shell_open("https://trockenstudio.blogspot.com/p/terms-of-service-for-last-route.html")
 		"language":
