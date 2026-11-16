@@ -26,6 +26,12 @@ func run() -> void:
 					valid = valid and Rect2(Vector2.ZERO,tex.atlas.get_size()).encloses(tex.region)
 		check(valid,"variant %d: five actions, eight directions, valid atlas bounds"%variant)
 	RouteControls.setup()
+	# This design's front three-quarter pose was drawn facing screen right.
+	for action in ["idle", "walk", "attack", "hurt", "death"]:
+		for f in (1 if action == "idle" else 6):
+			var left := RouteControls.direction_index(Vector2(-1, 1))
+			var right := RouteControls.direction_index(Vector2(1, 1))
+			check(ART.flipped(ART.ICON_ZOMBIE, action, left, f) and not ART.flipped(ART.ICON_ZOMBIE, action, right, f), "icon zombie faces the target on both front diagonals")
 	var audio := RouteAudio.new()
 	root.add_child(audio)
 	var level := RouteLevel.new()
