@@ -116,6 +116,8 @@ func _get_android_manifest_application_element_contents(
 		)
 		as String
 	)
+	if _debug:
+		app_id = ProjectSettingsService.ANDROID_DEFAULT_APP_ID
 	content.append(
 		"""
 	<meta-data

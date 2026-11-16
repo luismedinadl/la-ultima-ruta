@@ -191,7 +191,11 @@ func settings_menu(audio: RouteAudio) -> void:
 	volume.drag_ended.connect(func(changed: bool):
 		if changed: audio.save_music_volume())
 	volume.focus_exited.connect(audio.save_music_volume)
-	button(box, "Política de privacidad", Rect2(24,181,304,44), "privacy")
+	if OS.is_debug_build() and OS.get_name() == "Android":
+		button(box, "Privacidad" if not TranslationServer.get_locale().begins_with("en") else "Privacy", Rect2(24,181,140,44), "privacy")
+		button(box, "Probar anuncio" if not TranslationServer.get_locale().begins_with("en") else "Test ad", Rect2(170,181,158,44), "test_ad")
+	else:
+		button(box, "Política de privacidad", Rect2(24,181,304,44), "privacy")
 	button(box, "Condiciones del servicio", Rect2(24,235,182,44), "terms_web")
 	button(box, "Volver", Rect2(214,235,114,44), "back_menu")
 	toggle.grab_focus()
