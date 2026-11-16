@@ -10,9 +10,11 @@ var reading_document := false
 var awaiting_pistol_scene := false
 var showing_harbor_breach := false
 var touch: Control
+var ads := preload("res://scripts/transition_ads.gd").new()
 
 func _ready() -> void:
 	Language.initialize()
+	add_child(ads)
 	if OS.has_feature("mobile") or "--responsive" in OS.get_cmdline_user_args():
 		get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 		get_window().content_scale_stretch = Window.CONTENT_SCALE_STRETCH_FRACTIONAL
@@ -40,12 +42,14 @@ func _ready() -> void:
 	add_child(layout)
 
 func handle_command(action: String) -> void:
+	if ads.presenting: return
 	if action in ["survival", "select_level", "level1", "level2", "level3", "level4", "level5", "level6", "level7", "level8"] and not RouteSave.story_completed():
 		return
 	audio.cue("ui", -17)
 	match action:
 		"settings": ui.settings_menu(audio)
-		"privacy": ui.privacy_menu()
+		"privacy": ui.privacy_menu(ads.privacy_required())
+		"ad_privacy": ads.privacy_options()
 		"privacy_web": OS.shell_open("https://trockenstudio.blogspot.com/p/politica-de-privacidad-de-last-route.html")
 		"terms_web": OS.shell_open("https://trockenstudio.blogspot.com/p/terms-of-service-for-last-route.html")
 		"language":
@@ -67,7 +71,7 @@ func handle_command(action: String) -> void:
 		"documents":
 			if mode == "playing" and (level is DistributionLevel or level is BroadcastLevel) and not get_tree().paused:
 				level.review_documents()
-		"next_level": start_route(false,mini(8,level.level_number+1))
+		"next_level": ads.transition(start_route.bind(false,mini(8,level.level_number+1)))
 		"retry":
 			if level is SurvivalLevel: start_survival()
 			else: start_route(false,level.level_number if is_instance_valid(level) else 1)
@@ -79,7 +83,9 @@ func handle_command(action: String) -> void:
 		"back_pause": ui.pause_menu()
 		"back_menu": ui.close_pause()
 		"resume": resume_route()
-		"menu": show_menu()
+		"menu":
+			if mode == "result" and level is SurvivalLevel: ads.transition(show_menu)
+			else: show_menu()
 
 func start_survival() -> void:
 	if not RouteSave.story_completed(): return

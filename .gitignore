@@ -17,3 +17,4 @@ builds/
 *.aab
 *.pck
 *.zip
+/android/

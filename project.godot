@@ -47,3 +47,11 @@ renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.027, 0.039, 0.065, 1)
 2d/snap/snap_2d_transforms_to_pixel=true
+
+[admob]
+
+general/android/app_id="ca-app-pub-5544081559972494~6740519697"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/admob/plugin.cfg")

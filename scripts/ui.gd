@@ -196,7 +196,7 @@ func settings_menu(audio: RouteAudio) -> void:
 	button(box, "Volver", Rect2(214,235,114,44), "back_menu")
 	toggle.grab_focus()
 
-func privacy_menu() -> void:
+func privacy_menu(show_ad_options := false) -> void:
 	close_pause()
 	pause_panel = panel(root, Rect2(0,0,576,324), Color(0,0,0,0.8))
 	pause_panel.set_meta("full_bleed", true)
@@ -211,6 +211,9 @@ func privacy_menu() -> void:
 	policy.focus_mode = Control.FOCUS_ALL
 	policy.text = tr("The Last Route se juega sin crear una cuenta. El juego guarda el punto de control, los niveles completados y las preferencias de idioma y música en el almacenamiento privado de la aplicación. Consulta el idioma del dispositivo para elegir el idioma inicial.\n\nPublicidad. En las ediciones con anuncios, el juego utiliza Google AdMob. Al solicitar anuncios, el SDK de Google puede recopilar y compartir con Google y sus socios publicitarios la dirección IP, identificadores del dispositivo (incluido el identificador publicitario cuando esté disponible), interacciones con la aplicación y los anuncios, y datos de diagnóstico. Estos datos se utilizan para mostrar y medir anuncios, realizar análisis y prevenir el fraude. La dirección IP también puede utilizarse para estimar la ubicación aproximada. Una edición sin el SDK de anuncios no envía datos a AdMob.\n\nOpciones de privacidad. Cuando corresponda, el servicio de anuncios solicitará tu elección de consentimiento. Android también ofrece controles para el identificador publicitario en sus ajustes de privacidad. Consulta cómo trata Google los datos en policies.google.com/technologies/partner-sites.\n\nConservación y eliminación. El progreso y los ajustes permanecen en el dispositivo hasta que se sobrescriben o se borran. Para eliminarlos en Android, abre Ajustes → Aplicaciones → The Last Route → Almacenamiento → Borrar datos. Esto también elimina los niveles desbloqueados. Los datos que Google recibe al servir anuncios se transmiten cifrados y se conservan según sus políticas. Borrar la partida solo elimina los archivos locales. Más información en policies.google.com/technologies/retention.\n\nContacto. Para enviar una consulta de privacidad al responsable de The Last Route, utiliza el correo del desarrollador en la sección Asistencia de la aplicación de su ficha de Google Play.")
 	box.add_child(policy)
+	if show_ad_options:
+		policy.size.y = 156
+		button(box, "Ad privacy options" if TranslationServer.get_locale().begins_with("en") else "Privacidad de anuncios", Rect2(120,202,280,40), "ad_privacy")
 	button(box, "Volver", Rect2(270,250,182,44), "settings").grab_focus()
 	button(box, "Ver en la web", Rect2(68,250,182,44), "privacy_web")
 
