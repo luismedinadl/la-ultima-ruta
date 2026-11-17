@@ -81,12 +81,10 @@ func build_street() -> void:
 		MetroArt.cutout(plate)
 		var name_ := Label.new()
 		name_.text = ["RECEPCIÓN","ALMACÉN","CONSERVACIÓN","ARCHIVOS","CONTROL","SALIDA"][i]
-		name_.position = Vector2(POINTS[i]-68,64)
-		name_.size = Vector2(136,20)
-		name_.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		name_.add_theme_font_size_override("font_size",11)
 		name_.add_theme_color_override("font_color",Color("e3d5b9"))
 		station_walls.add_child(name_)
+		DistributionArt.center_plate_label(name_, plate)
 
 func item(index: int, pos: Vector2, size_: Vector2, footprint := Vector2.ZERO, sheet := "interactives") -> Sprite2D:
 	var sprite := add_sprite(actors,DistributionArt.item(index,sheet),pos,size_,true)

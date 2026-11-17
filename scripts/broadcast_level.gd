@@ -55,11 +55,9 @@ func build_street() -> void:
 		MetroArt.cutout(plate)
 		var sign_node := Label.new()
 		sign_node.text = ["ESTACIÓN DE RADIO","ENERGÍA","ANTENA","SALA DE EMISIÓN","SALIDA DE SERVICIO","PUERTO →"][i]
-		sign_node.position = Vector2(POINTS[i]-75,68)
-		sign_node.size = Vector2(150,20)
-		sign_node.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		sign_node.add_theme_font_size_override("font_size",10)
 		station_walls.add_child(sign_node)
+		DistributionArt.center_plate_label(sign_node, plate)
 
 func item(index: int, pos: Vector2, size_: Vector2, footprint := Vector2.ZERO) -> Sprite2D:
 	var sprite := add_sprite(actors,BroadcastArt.item(index),pos,size_,true)
