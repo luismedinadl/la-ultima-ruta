@@ -148,8 +148,8 @@ func menu(can_continue: bool) -> void:
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.add_theme_color_override("font_shadow_color", Color.BLACK)
 	title.add_theme_constant_override("shadow_offset_y", 2)
-	var start := button(screen, "Nueva historia", Rect2(178, 74 if mobile else 110, 220, 44 if mobile else 32), "new")
-	var continue_btn := button(screen, "Continuar historia", Rect2(178, 122 if mobile else 148, 220, 44 if mobile else 32), "continue")
+	var continue_btn := button(screen, "Continuar historia", Rect2(178, 74 if mobile else 110, 220, 44 if mobile else 32), "continue")
+	var start := button(screen, "Nueva historia", Rect2(178, 122 if mobile else 148, 220, 44 if mobile else 32), "new")
 	continue_btn.disabled = not can_continue
 	continue_btn.tooltip_text = "Empieza una nueva historia para guardar tu progreso." if not can_continue else "Continúa desde el último punto seguro."
 	var select_btn := button(screen, "Seleccionar nivel", Rect2(178, 170 if mobile else 186, 220, 44 if mobile else 32), "select_level")
@@ -164,7 +164,7 @@ func menu(can_continue: bool) -> void:
 	settings.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	settings.tooltip_text = tr("Configuración")
 	settings.accessibility_name = settings.tooltip_text
-	start.grab_focus()
+	(continue_btn if can_continue else start).grab_focus()
 
 func settings_menu(audio: RouteAudio) -> void:
 	close_pause()

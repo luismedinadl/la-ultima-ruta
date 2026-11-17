@@ -55,7 +55,9 @@ func build_street() -> void:
 	for entry in [[0,1160,77,116],[1,3110,78,145],[2,4300,60,125]]:
 		var sign_node := add_sprite(station_walls,RescueArt.sign(entry[0]),Vector2(entry[1],entry[2]),Vector2(entry[3],28))
 		MetroArt.cutout(sign_node)
-		RouteStory.sign_caption(sign_node, ["Workshop →","Gate control →","Service passage →"][entry[0]])
+		var caption := RouteStory.sign_caption(sign_node, ["Workshop →","Gate control →","Service passage →"][entry[0]])
+		if entry[0] == 1:
+			caption.z_index = 1
 
 func build_props() -> void:
 	# Matches the continuous concrete divider painted into the new background.

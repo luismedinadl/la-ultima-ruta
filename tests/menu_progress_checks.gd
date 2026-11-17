@@ -16,10 +16,10 @@ func run() -> void:
 	await process_frame
 	var buttons: Array[Button] = []
 	for child in app.ui.screen.get_children():
-		if child is Button: buttons.append(child)
+		if child is Button and not child.text.is_empty(): buttons.append(child)
 	check(buttons.size() == 5, "five menu buttons")
-	check(buttons.map(func(b): return b.text) == ["Nueva historia", "Continuar historia", "Seleccionar nivel", "Supervivencia", "Salir"], "requested labels and no controls button")
-	check(buttons[1].disabled and buttons[2].disabled and buttons[3].disabled, "continue without save and future survival disabled")
+	check(buttons.map(func(b): return b.text) == ["Continuar historia", "Nueva historia", "Seleccionar nivel", "Supervivencia", "Salir"], "continue precedes new story")
+	check(buttons[0].position.y < buttons[1].position.y and buttons[0].disabled and not buttons[1].disabled and buttons[2].disabled and buttons[3].disabled, "new story available below disabled continue")
 	for b in buttons: check(is_equal_approx(b.position.x + b.size.x / 2, 288), "button centered")
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw

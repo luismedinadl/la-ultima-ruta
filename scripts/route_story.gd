@@ -36,11 +36,11 @@ static func sign(parent: Node2D, file: String, location: Vector2, width: float) 
 	sign_caption(sprite, captions[file])
 	return sprite
 
-static func sign_caption(sprite: Sprite2D, meaning: String) -> void:
+static func sign_caption(sprite: Sprite2D, meaning: String) -> Label:
 	var extent := sprite.texture.get_size() * sprite.scale
-	caption_at(sprite.get_parent(), meaning, sprite.position + Vector2(0, extent.y / 2 + 1), extent.x)
+	return caption_at(sprite.get_parent(), meaning, sprite.position + Vector2(0, extent.y / 2 + 1), extent.x)
 
-static func caption_at(parent: Node, meaning: String, top_center: Vector2, width: float) -> void:
+static func caption_at(parent: Node, meaning: String, top_center: Vector2, width: float) -> Label:
 	var caption := Label.new()
 	caption.text = meaning
 	caption.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
@@ -52,3 +52,4 @@ static func caption_at(parent: Node, meaning: String, top_center: Vector2, width
 	caption.size = Vector2(width, 16)
 	caption.position = top_center - Vector2(width / 2, 0)
 	parent.add_child(caption)
+	return caption
